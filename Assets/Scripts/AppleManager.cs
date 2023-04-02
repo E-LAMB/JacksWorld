@@ -10,7 +10,7 @@ public class AppleManager : MonoBehaviour
     public GameObject old_amara;
     public GameObject new_amara;
 
-    public GameObject exit_door;
+    // public GameObject exit_door;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +25,7 @@ public class AppleManager : MonoBehaviour
         {
             old_amara.SetActive(false);
             new_amara.SetActive(true);
-            exit_door.SetActive(true);
+            // exit_door.SetActive(true);
             GetComponent<AppleManager>().enabled = false;
         }
     }

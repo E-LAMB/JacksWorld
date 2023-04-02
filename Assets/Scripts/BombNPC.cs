@@ -50,6 +50,11 @@ public class BombNPC : MonoBehaviour
 
         my_prompt.SetActive(show_prompt);
 
+        if (dia_state > 1)
+        {
+            player_is_close = true;
+        }
+
         if (dia_state == 1 && player_is_close && Input.GetKeyDown(KeyCode.E))
         {
             dia_state = 2;

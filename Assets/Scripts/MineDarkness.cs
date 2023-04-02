@@ -33,9 +33,9 @@ public class MineDarkness : MonoBehaviour
 
         size = 3f - difference;
 
-        if (size < 0.6f)
+        if (size < 0.65f)
         {
-            size = 0.6f;
+            size = 0.65f;
         }
 
         if (0f > difference)

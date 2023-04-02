@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FlowerField.unity
     guid: d999e638ea16898428b2863509a0d79a
+  - enabled: 1
+    path: Assets/Scenes/Mines.unity
+    guid: 2632b037fab0d4542a533209d0bd4025
   m_configObjects: {}
