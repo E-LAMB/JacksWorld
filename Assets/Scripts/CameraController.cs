@@ -7,12 +7,16 @@ public class CameraController : MonoBehaviour
     public Transform player;
     public float speed = 0.5f;
     public float my_height;
+    public bool manual_height;
 
     public Vector3 offset;
     
     void Start()
     {
-        my_height = transform.position.y;
+        if (!manual_height)
+        {
+            my_height = transform.position.y;
+        }
     }
 
     void FixedUpdate()
