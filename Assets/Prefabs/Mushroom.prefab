@@ -160,5 +160,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e06adc8d1efdcb44ba7b943fc758ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boost_height: 600
+  boost_height: 10
   player_script: {fileID: 0}

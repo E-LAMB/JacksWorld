@@ -65323,6 +65323,8 @@ MonoBehaviour:
   dashing_heat: 0
   dashing_unlocked: 0
   dashing_ready: 1
+  spare_jump_docked: 0
+  spare_jump_enabled: 0
   freeze_position: {x: 0, y: 0, z: 0}
   got_frozen: 0
   is_grounded: 0
@@ -65341,7 +65343,7 @@ MonoBehaviour:
   respawn_position: {x: 0, y: 0, z: 0}
   movement_speed: 5
   dash_speed: 11
-  jump_height: 340
+  jump_height: 7.5
   last_direction: 1
   currently_moving: 0
   my_rigidbody: {fileID: 1340890674}

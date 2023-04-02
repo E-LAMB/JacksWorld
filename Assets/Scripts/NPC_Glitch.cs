@@ -12,6 +12,8 @@ public class NPC_Glitch : MonoBehaviour
     // 3 = Can conclude
     // 4 = Concluded
 
+    public bool gives_jump;
+
     public LayerMask player_layer;
     public bool player_is_close;
 
@@ -73,7 +75,13 @@ public class NPC_Glitch : MonoBehaviour
             dia_state = 4;
             Mind.player_in_control = true;
             subtitle_system.ConcludeDialouge();
-            player_script.dashing_unlocked = true;
+            if (gives_jump)
+            {
+                player_script.spare_jump_enabled = true; 
+            } else
+            {
+                player_script.dashing_unlocked = true;
+            }
             signage.SetActive(true);
             old_grim.SetActive(false);
             new_grim.SetActive(true);

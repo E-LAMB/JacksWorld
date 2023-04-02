@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
     public bool dashing_unlocked;
     public bool dashing_ready = true;
 
+    public bool spare_jump_docked;
+    public bool spare_jump_enabled;
+
     public Vector3 freeze_position;
     public bool got_frozen;
 
@@ -44,7 +47,8 @@ public class PlayerController : MonoBehaviour
 
     public void Jump(float height)
     {
-        my_rigidbody.AddForce(new Vector2(0.0f,height));
+        my_rigidbody.velocity = new Vector2(my_rigidbody.velocity.x,height);
+        // my_rigidbody.AddForce(new Vector2(0.0f,height));
         my_animator.SetTrigger("Jumped");
     }
 
@@ -142,6 +146,11 @@ public class PlayerController : MonoBehaviour
         at_checkpoint = Physics2D.OverlapCircle(ground_checker.transform.position, 0.2f, checkpoint_layer);
         in_death = Physics2D.OverlapCircle(ground_checker.transform.position, 0.2f, death_layer);
 
+        if (is_grounded)
+        {
+            spare_jump_docked = true;
+        }
+
         if (at_checkpoint)
         {
             SetCheckpoint();
@@ -155,6 +164,12 @@ public class PlayerController : MonoBehaviour
         if (is_grounded && !currently_dashing && Input.GetKeyDown(KeyCode.Space) && Mind.player_in_control)
         {
             Jump(jump_height);
+        }
+
+        if (!is_grounded && spare_jump_docked && spare_jump_enabled && !currently_dashing && Input.GetKeyDown(KeyCode.Space) && Mind.player_in_control)
+        {
+            Jump(jump_height);
+            spare_jump_docked = false;
         }
 
         if (last_direction == 1)

@@ -49036,6 +49036,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1273850793}
     m_Modifications:
+    - target: {fileID: 6907691589173255737, guid: 1fa30bfd5825d3c47a5e8fbd9ed9fc66, type: 3}
+      propertyPath: boost_height
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6907691589173255738, guid: 1fa30bfd5825d3c47a5e8fbd9ed9fc66, type: 3}
       propertyPath: m_Name
       value: Mushroom (1)
@@ -88337,6 +88341,8 @@ MonoBehaviour:
   dashing_heat: 0
   dashing_unlocked: 0
   dashing_ready: 1
+  spare_jump_docked: 0
+  spare_jump_enabled: 0
   freeze_position: {x: 0, y: 0, z: 0}
   got_frozen: 0
   is_grounded: 0
@@ -88355,7 +88361,7 @@ MonoBehaviour:
   respawn_position: {x: 0, y: 0, z: 0}
   movement_speed: 5
   dash_speed: 11
-  jump_height: 340
+  jump_height: 7.5
   last_direction: 1
   currently_moving: 0
   my_rigidbody: {fileID: 1340890674}
@@ -95063,6 +95069,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1273850793}
     m_Modifications:
+    - target: {fileID: 6907691589173255737, guid: 1fa30bfd5825d3c47a5e8fbd9ed9fc66, type: 3}
+      propertyPath: boost_height
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6907691589173255738, guid: 1fa30bfd5825d3c47a5e8fbd9ed9fc66, type: 3}
       propertyPath: m_Name
       value: Mushroom (2)
