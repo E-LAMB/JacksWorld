@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
     public bool dashing_unlocked;
     public bool dashing_ready = true;
 
+    public Vector3 freeze_position;
+    public bool got_frozen;
+
     public bool is_grounded;
     public bool at_checkpoint;
     public bool in_death;
@@ -79,6 +82,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Mind.player_in_control)
         {
+            got_frozen = false;
             if (Input.GetKeyDown(KeyCode.LeftShift) && dashing_ready && dashing_unlocked && last_direction != 0f)
             {
                 Dash();
@@ -126,6 +130,12 @@ public class PlayerController : MonoBehaviour
             my_rigidbody.velocity = new Vector2 (0f,0f);
             currently_moving = false;
             currently_dashing = false;
+            if (!got_frozen)
+            {
+                got_frozen = true;
+                freeze_position = self.position;
+            }
+            self.position = freeze_position;
         }
 
         is_grounded = Physics2D.OverlapCircle(ground_checker.transform.position, 0.2f, ground_layer);
@@ -142,7 +152,7 @@ public class PlayerController : MonoBehaviour
             LoadCheckpoint();
         }
 
-        if (is_grounded && !currently_dashing && Input.GetKeyDown(KeyCode.Space))
+        if (is_grounded && !currently_dashing && Input.GetKeyDown(KeyCode.Space) && Mind.player_in_control)
         {
             Jump(jump_height);
         }

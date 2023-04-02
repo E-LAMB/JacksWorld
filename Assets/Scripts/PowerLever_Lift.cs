@@ -32,6 +32,9 @@ public class PowerLever_Lift : MonoBehaviour
     public bool should_activate_turner;
     public Turner turner;
 
+    public GameObject deactivated;
+    public GameObject activated;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +61,8 @@ public class PowerLever_Lift : MonoBehaviour
         {
             dia_state = 2;
             Mind.player_in_control = false;
+            deactivated.SetActive(false);
+            activated.SetActive(true);
             subtitle_system.ShowDialouge(my_text,my_name);
         }
 
