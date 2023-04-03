@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8523927297415374909}
   - component: {fileID: 2194757120348799223}
   - component: {fileID: 6665232779144673112}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: OrangeBox
   m_TagString: OrangeBox
   m_Icon: {fileID: 0}
@@ -58,8 +58,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8523927297415374849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: -2, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 6832160928416839551}
   m_Father: {fileID: 0}
@@ -132,11 +132,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bf98139afe049f847a9ee2d8ea848029, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2194757120348799223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +156,9 @@ MonoBehaviour:
     m_Bits: 512
   on_conveyor: 0
   checker: {fileID: 6832160928416839551}
+  death_layer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!70 &6665232779144673112
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

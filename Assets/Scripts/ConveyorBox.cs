@@ -10,7 +10,10 @@ public class ConveyorBox : MonoBehaviour
 
     public LayerMask conveyor_layer;
     public bool on_conveyor;
+
     public Transform checker;
+
+    public LayerMask death_layer;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,11 @@ public class ConveyorBox : MonoBehaviour
     void Update()
     {
         on_conveyor = Physics2D.OverlapCircle(checker.position, 0.2f, conveyor_layer);
+
+        if (Physics2D.OverlapCircle(checker.position, 0.2f, death_layer))
+        {
+            Destroy(gameObject);
+        }
 
         if (on_conveyor)
         {

@@ -49,7 +49,10 @@ public class PlayerController : MonoBehaviour
     {
         my_rigidbody.velocity = new Vector2(my_rigidbody.velocity.x,height);
         // my_rigidbody.AddForce(new Vector2(0.0f,height));
-        my_animator.SetTrigger("Jumped");
+        if (height > 0)
+        {
+            my_animator.SetTrigger("Jumped");
+        }
     }
 
     public void SetCheckpoint()
