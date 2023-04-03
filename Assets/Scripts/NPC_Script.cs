@@ -26,17 +26,24 @@ public class NPC_Script : MonoBehaviour
 
     public bool show_prompt;
 
+    public string special_range;
+
+    float d_range = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (special_range == "door")
+        {
+            d_range = 1f;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        player_is_close = Physics2D.OverlapCircle(transform.position, 2f, player_layer);
+        player_is_close = Physics2D.OverlapCircle(transform.position, d_range, player_layer);
 
         if (player_is_close && dia_state == 1)
         {

@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FreeCameraJump : MonoBehaviour
+public class SceneWarpTrigger : MonoBehaviour
 {
 
-    public CameraController my_controller;
+    public int new_scene;
 
     void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.tag == "Player")
         {
-            my_controller.enabled = true;
-            my_controller.my_height = -5000f;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(new_scene);
         }
 
     }
+
 }
