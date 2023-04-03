@@ -3622,6 +3622,7 @@ MonoBehaviour:
   my_text: Well done again little buddy - Keep doing the good stuff okay? And find
     the tape in the Warehouse using your gift for me.
   show_prompt: 0
+  special_range: 
 --- !u!212 &57648344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16020,6 +16021,7 @@ MonoBehaviour:
   subtitle_system: {fileID: 1519905031}
   my_text: You should eat more fruit jack, A growing boy like you needs to be healtyh
   show_prompt: 0
+  special_range: 
 --- !u!95 &241743545
 Animator:
   serializedVersion: 3
@@ -16918,6 +16920,7 @@ MonoBehaviour:
     Thank you jack for finding my oranges Thank you jack for finding my oranges Thank
     you jack for finding my oranges Thank you jack for finding my oranges '
   show_prompt: 0
+  special_range: 
 --- !u!95 &254354942
 Animator:
   serializedVersion: 3
@@ -21704,7 +21707,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 1d80ba09dfb91c545b17427e48ef6281, type: 3}
     - target: {fileID: 7873720883656694268, guid: 18ef0aa1c1028354cb91d7e2f3afefb2, type: 3}
       propertyPath: scene_to_warp
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7873720883656694269, guid: 18ef0aa1c1028354cb91d7e2f3afefb2, type: 3}
       propertyPath: m_RootOrder
@@ -67265,6 +67268,7 @@ MonoBehaviour:
   subtitle_system: {fileID: 1519905031}
   my_text: Where did pete go? What did you do?
   show_prompt: 0
+  special_range: 
 --- !u!95 &991964279
 Animator:
   serializedVersion: 3
@@ -108452,6 +108456,7 @@ MonoBehaviour:
   subtitle_system: {fileID: 1519905031}
   my_text: Oranges
   show_prompt: 0
+  special_range: 
 --- !u!95 &1693457061
 Animator:
   serializedVersion: 3
@@ -117794,6 +117799,7 @@ MonoBehaviour:
   subtitle_system: {fileID: 1519905031}
   my_text: Where are my oranges jack?
   show_prompt: 0
+  special_range: 
 --- !u!95 &1915708187
 Animator:
   serializedVersion: 3
@@ -120130,6 +120136,7 @@ MonoBehaviour:
   subtitle_system: {fileID: 1519905031}
   my_text: JACK?!!!! ORANGE?? GET ORANGE BOX JACK! GET PLEASE? PIT - BEWARE PIT!!
   show_prompt: 0
+  special_range: 
 --- !u!95 &1966746521
 Animator:
   serializedVersion: 3
@@ -127924,6 +127931,7 @@ MonoBehaviour:
   my_text: Hi Jack, Long time no see! Could you help me out? I need to sort these
     boxes of oranges from the rotten fruits. Do you  mind helping me out?
   show_prompt: 0
+  special_range: 
 --- !u!212 &2107524771
 SpriteRenderer:
   m_ObjectHideFlags: 0

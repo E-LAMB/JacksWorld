@@ -16120,7 +16120,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 1d80ba09dfb91c545b17427e48ef6281, type: 3}
     - target: {fileID: 7873720883656694268, guid: 18ef0aa1c1028354cb91d7e2f3afefb2, type: 3}
       propertyPath: scene_to_warp
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7873720883656694269, guid: 18ef0aa1c1028354cb91d7e2f3afefb2, type: 3}
       propertyPath: m_RootOrder
@@ -54918,6 +54918,7 @@ MonoBehaviour:
   my_text: Hello Jack, It's been a while since I've seen you! I think I last saw
     you at the wedding didn't I? Me and Amara are doing great by the way, How's Pete?
   show_prompt: 0
+  special_range: 
 --- !u!95 &1588423447
 Animator:
   serializedVersion: 3
@@ -58350,6 +58351,7 @@ MonoBehaviour:
     Could you help me find my three large prize apples? That would be very helpful
     of you, Thanks!
   show_prompt: 0
+  special_range: 
 --- !u!1 &1677928116
 GameObject:
   m_ObjectHideFlags: 0
@@ -63192,6 +63194,7 @@ MonoBehaviour:
   my_text: Wow! Thanks for helping me find all these apples! Sunny was just here
     and she asked me to tell you to visit her. You should go to the flower field.
   show_prompt: 0
+  special_range: 
 --- !u!95 &1849234727
 Animator:
   serializedVersion: 3

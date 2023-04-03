@@ -74028,6 +74028,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1d80ba09dfb91c545b17427e48ef6281, type: 3}
+    - target: {fileID: 7873720883656694268, guid: 18ef0aa1c1028354cb91d7e2f3afefb2, type: 3}
+      propertyPath: scene_to_warp
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7873720883656694269, guid: 18ef0aa1c1028354cb91d7e2f3afefb2, type: 3}
       propertyPath: m_RootOrder
       value: 5
