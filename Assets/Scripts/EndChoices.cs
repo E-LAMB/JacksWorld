@@ -20,6 +20,18 @@ public class EndChoices : MonoBehaviour
         choice_a.SetActive(false);
         choice_b_locked.SetActive(false);
         choice_b_unlocked.SetActive(false);
+
+        seen_all_VHS = true;
+        if (!Mind.seen_apple_vhs) {seen_all_VHS = false;}
+        if (!Mind.seen_flower_vhs) {seen_all_VHS = false;}
+        if (!Mind.seen_mines_vhs) {seen_all_VHS = false;}
+        if (!Mind.seen_orange_vhs) {seen_all_VHS = false;}
+        if (!Mind.seen_hub_vhs) {seen_all_VHS = false;}
+    }
+
+    public void ChoiceMade(int towhere)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(towhere);
     }
 
     void Reveal()
@@ -44,7 +56,7 @@ public class EndChoices : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer > 3f)
+        if (timer > 5f)
         {
             Reveal();
         }

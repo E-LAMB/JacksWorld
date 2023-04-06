@@ -4766,7 +4766,7 @@ MonoBehaviour:
   - I'LL GO TALK TO HIM
   - I'LL GO TALK TO HIM
   cam_timer: 0
-  cam_threshold: 26
+  cam_threshold: 27
   cam_size:
     serializedVersion: 2
     m_Curve:

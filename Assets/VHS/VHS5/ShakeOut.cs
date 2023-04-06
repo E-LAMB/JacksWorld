@@ -22,6 +22,8 @@ public class ShakeOut : MonoBehaviour
 
     public bool autonomous;
 
+    public GameObject to_hide;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +65,7 @@ public class ShakeOut : MonoBehaviour
 
         if (autonomous)
         {
+            to_hide.SetActive(false);
             cam_force = 0f;
             offset = 0f;
             cam_body.velocity = new Vector2 (0f, cam_body.velocity.y);

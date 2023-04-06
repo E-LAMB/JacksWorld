@@ -21,6 +21,8 @@ public class PriestScene : MonoBehaviour
     {
         needed = watching.dia_state;
         if (required < needed)
-        UnityEngine.SceneManagement.SceneManager.LoadScene(new_scene);
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(new_scene);
+        }
     }
 }
