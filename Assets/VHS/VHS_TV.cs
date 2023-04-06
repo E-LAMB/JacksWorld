@@ -25,16 +25,17 @@ public class VHS_TV : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log(Mind.apple_vhs);
+        Debug.Log(Mind.seen_apple_vhs);
     }
 
     void ViewVHS()
     {
-        if (corresponding_tape == "apple") {Mind.seen_apple_vhs = true;}
-        if (corresponding_tape == "flower") {Mind.seen_flower_vhs = true;}
-        if (corresponding_tape == "mines") {Mind.seen_mines_vhs = true;}
-        if (corresponding_tape == "orange") {Mind.seen_orange_vhs = true;}
-        if (corresponding_tape == "hub") {Mind.seen_hub_vhs = true;}
+        if (corresponding_tape == "apple") {UnityEngine.SceneManagement.SceneManager.LoadScene(15);}
+        if (corresponding_tape == "flower") {UnityEngine.SceneManagement.SceneManager.LoadScene(16);}
+        if (corresponding_tape == "mines") {UnityEngine.SceneManagement.SceneManager.LoadScene(17);}
+        if (corresponding_tape == "orange") {UnityEngine.SceneManagement.SceneManager.LoadScene(18);}
+        if (corresponding_tape == "hub") {UnityEngine.SceneManagement.SceneManager.LoadScene(19);}
     }
 
     // Update is called once per frame
