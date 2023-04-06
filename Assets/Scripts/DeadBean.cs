@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActiveOnStart : MonoBehaviour
+public class DeadBean : MonoBehaviour
 {
-
-    public GameObject to_activate;
-    public bool new_state = true;
+    
+    public Transform self;
 
     // Start is called before the first frame update
     void Start()
     {
-        to_activate.SetActive(new_state);
+        self.localRotation = Quaternion.Euler(0f,0f,Random.Range(0f,360f));
     }
 
 }

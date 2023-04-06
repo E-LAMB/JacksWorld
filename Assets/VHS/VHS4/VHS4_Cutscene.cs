@@ -13,10 +13,17 @@ public class VHS4_Cutscene : MonoBehaviour
 
     public float timer;
     public float time_switch;
+    public float time_to_exit;
+
+    public GameObject flash;
+    public bool flash_bool;
+
+    public VHS_Exit exit;
 
     // Start is called before the first frame update
     void Start()
     {
+        flash_bool = false;
         slides[0].SetActive(false);
         slides[1].SetActive(true);
         slides[2].SetActive(false);
@@ -30,6 +37,7 @@ public class VHS4_Cutscene : MonoBehaviour
         slides[10].SetActive(false);
         slides[11].SetActive(false);
         stage = 1;
+        flash.SetActive(false);
     }
 
     void FlipPage()
@@ -41,6 +49,7 @@ public class VHS4_Cutscene : MonoBehaviour
         {
             time_switch = 7f;
         }
+
     }
 
     // Update is called once per frame
@@ -51,6 +60,26 @@ public class VHS4_Cutscene : MonoBehaviour
         {
             timer = 0f;
             FlipPage();
+        }
+
+        if (stage > 10)
+        {
+            Debug.Log("Is Running");
+            if (Random.Range(1,4) == 1)
+            {
+                flash_bool = !flash_bool;
+                flash.SetActive(flash_bool);
+            }
+        }
+
+        if (stage == 11)
+        {
+            time_to_exit += Time.deltaTime;
+        }
+
+        if (time_to_exit > 2f)
+        {
+            exit.switch_scenes();
         }
     }
 }
