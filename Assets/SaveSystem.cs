@@ -12,6 +12,8 @@ public class SaveSystem : MonoBehaviour
     public GameObject save_icon;
     public float icon_show_time;
 
+    public bool should_reload;
+
     // --- Data Extraction --- //
 
     [Header("Extracted Data (Arrays)")]
@@ -192,80 +194,95 @@ public class SaveSystem : MonoBehaviour
         {
             Mind.apple_vhs = false;
             Mind.seen_apple_vhs = false;
+            data_VHS_1 = 0;
 
         } else if (collective_extraction_VHS[0] == "1")
         {
             Mind.apple_vhs = true;
             Mind.seen_apple_vhs = false;
+            data_VHS_1 = 1;
 
         } else if (collective_extraction_VHS [0] == "2")
         {
             Mind.apple_vhs = true;
             Mind.seen_apple_vhs = true;
+            data_VHS_1 = 2;
         }
 
         if (collective_extraction_VHS[1] == "0")
         {
             Mind.flower_vhs = false;
             Mind.seen_flower_vhs = false;
+            data_VHS_2 = 0;
 
         } else if (collective_extraction_VHS[1] == "1")
         {
             Mind.flower_vhs = true;
             Mind.seen_flower_vhs = false;
+            data_VHS_2 = 1;
 
         } else if (collective_extraction_VHS [1] == "2")
         {
             Mind.flower_vhs = true;
             Mind.seen_flower_vhs = true;
+            data_VHS_2 = 2;
         }
 
         if (collective_extraction_VHS[2] == "0")
         {
             Mind.mines_vhs = false;
             Mind.seen_mines_vhs = false;
+            data_VHS_3 = 0;
 
         } else if (collective_extraction_VHS[2] == "1")
         {
             Mind.mines_vhs = true;
             Mind.seen_mines_vhs = false;
+            data_VHS_3 = 1;
 
         } else if (collective_extraction_VHS [2] == "2")
         {
             Mind.mines_vhs = true;
             Mind.seen_mines_vhs = true;
+            data_VHS_3 = 2;
         }
 
         if (collective_extraction_VHS[3] == "0")
         {
             Mind.orange_vhs = false;
             Mind.seen_orange_vhs = false;
+            data_VHS_4 = 0;
 
         } else if (collective_extraction_VHS[3] == "1")
         {
             Mind.orange_vhs = true;
             Mind.seen_orange_vhs = false;
+            data_VHS_4 = 1;
 
         } else if (collective_extraction_VHS [3] == "2")
         {
             Mind.orange_vhs = true;
             Mind.seen_orange_vhs = true;
+            data_VHS_4 = 2;
         }
 
         if (collective_extraction_VHS[4] == "0")
         {
             Mind.hub_vhs = false;
             Mind.seen_hub_vhs = false;
+            data_VHS_5 = 0;
 
         } else if (collective_extraction_VHS[4] == "1")
         {
             Mind.hub_vhs = true;
             Mind.seen_hub_vhs = false;
+            data_VHS_5 = 1;
 
         } else if (collective_extraction_VHS [4] == "2")
         {
             Mind.hub_vhs = true;
             Mind.seen_hub_vhs = true;
+            data_VHS_5 = 2;
         }
 
         // Assigning Data to Variables (PROGRESS)
@@ -288,22 +305,29 @@ public class SaveSystem : MonoBehaviour
         Mind.current_save_point = int.Parse(collective_extraction_PROGRESS[0]);
         Mind.max_save_point = int.Parse(collective_extraction_PROGRESS[1]);
 
+        data_PROGRESS_current = int.Parse(collective_extraction_PROGRESS[0]);
+        data_PROGRESS_max = int.Parse(collective_extraction_PROGRESS[1]);
+
         // Assigning Data to Variables (ENDINGS)
 
         if (collective_extraction_ENDING[0] == "1")
         {
             Mind.seen_good_ending = true;
+            data_ENDING_good = 0;
         } else
         {
             Mind.seen_good_ending = false;
+            data_ENDING_good = 1;
         }
 
         if (collective_extraction_ENDING[1] == "1")
         {
             Mind.seen_bad_ending = true;
+            data_ENDING_bad = 0;
         } else
         {
             Mind.seen_bad_ending = false;
+            data_ENDING_bad = 1;
         }
 
     }
@@ -346,6 +370,12 @@ public class SaveSystem : MonoBehaviour
         } else
         {
             save_icon.SetActive(false);
+        }
+
+        if (should_reload)
+        {
+            should_reload = false;
+            SaveSystem_LOAD();
         }
 
     }
