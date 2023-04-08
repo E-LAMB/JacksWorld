@@ -29,6 +29,5 @@ public static class Mind
     public static bool player_in_control;
 
     public static float prompt_size = 0.3f;
-    public static float save_icon_time;
 
 }

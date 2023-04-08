@@ -9,8 +9,7 @@ public class SaveSystem : MonoBehaviour
     [Header("Scene Specific Data")]
 
     public int current_location_save_ID;
-    public GameObject save_icon;
-    public float icon_show_time;
+    public bool should_Autosave;
 
     public bool should_reload;
 
@@ -167,8 +166,6 @@ public class SaveSystem : MonoBehaviour
         writer.Write(content);
         Debug.Log(content);
         writer.Close();
-
-        icon_show_time = Mind.save_icon_time;
 
     }
 
@@ -363,13 +360,11 @@ public class SaveSystem : MonoBehaviour
 
         }
 
-        if (icon_show_time > 0f)
+        if (should_Autosave)
         {
-            icon_show_time -= Time.deltaTime;
-            save_icon.SetActive(true);
-        } else
-        {
-            save_icon.SetActive(false);
+            Mind.current_save_point = current_location_save_ID;
+            SaveSystem_SAVE();
+            should_Autosave = false;
         }
 
         if (should_reload)
