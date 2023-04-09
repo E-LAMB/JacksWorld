@@ -302,8 +302,8 @@ public class SaveSystem : MonoBehaviour
         Mind.current_save_point = int.Parse(collective_extraction_PROGRESS[0]);
         Mind.max_save_point = int.Parse(collective_extraction_PROGRESS[1]);
 
-        data_PROGRESS_current = int.Parse(collective_extraction_PROGRESS[0]);
-        data_PROGRESS_max = int.Parse(collective_extraction_PROGRESS[1]);
+        data_PROGRESS_max = int.Parse(collective_extraction_PROGRESS[0]);
+        data_PROGRESS_current = int.Parse(collective_extraction_PROGRESS[1]);
 
         // Assigning Data to Variables (ENDINGS)
 
