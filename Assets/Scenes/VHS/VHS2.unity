@@ -2097,6 +2097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   after_hub: 22
+  which_was_seen: 2
 --- !u!4 &1401756961
 Transform:
   m_ObjectHideFlags: 0

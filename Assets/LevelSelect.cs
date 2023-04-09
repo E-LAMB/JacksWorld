@@ -35,6 +35,11 @@ public class LevelSelect : MonoBehaviour
         if (selected_location == 13) {UnityEngine.SceneManagement.SceneManager.LoadScene(14);}
     }
 
+    public void go_to_level(int to_go)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(to_go);
+    }
+
     void show_icon()
     {
 

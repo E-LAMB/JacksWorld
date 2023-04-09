@@ -3084,6 +3084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   after_hub: 21
+  which_was_seen: 1
 --- !u!1 &1338508116
 GameObject:
   m_ObjectHideFlags: 0

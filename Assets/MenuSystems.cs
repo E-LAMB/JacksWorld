@@ -48,14 +48,14 @@ public class MenuSystems : MonoBehaviour
 
     }
 
-    public void Butt_SceneOptions()
+    public void Butt_SceneLevelSelect()
     {
-        // switch to option scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene(28);
     }
 
-    public void Butt_Credits()
+    public void Butt_Options()
     {
-        
+        UnityEngine.SceneManagement.SceneManager.LoadScene(30);
     }
 
     public void Butt_Quit()

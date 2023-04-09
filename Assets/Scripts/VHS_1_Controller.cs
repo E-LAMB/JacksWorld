@@ -75,7 +75,6 @@ public class VHS_1_Controller : MonoBehaviour
 
             if (out_timer > 1f)
             {
-                Mind.seen_apple_vhs = true;
                 exit.switch_scenes();
             }
         }
