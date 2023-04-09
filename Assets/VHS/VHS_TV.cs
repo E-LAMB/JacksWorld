@@ -25,8 +25,8 @@ public class VHS_TV : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(Mind.apple_vhs);
-        Debug.Log(Mind.seen_apple_vhs);
+        //Debug.Log(Mind.apple_vhs);
+        //Debug.Log(Mind.seen_apple_vhs);
     }
 
     void ViewVHS()
@@ -86,6 +86,14 @@ public class VHS_TV : MonoBehaviour
         } else
         {
             prompt.SetActive(false);
+        }
+
+        if (viewed_tape)
+        {
+            dark.SetActive(true);
+        } else
+        {
+            dark.SetActive(false);
         }
     }
 }

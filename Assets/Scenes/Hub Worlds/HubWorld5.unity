@@ -74172,6 +74172,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7873720883656694268, guid: 18ef0aa1c1028354cb91d7e2f3afefb2, type: 3}
+      propertyPath: scene_to_warp
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 7873720883656694269, guid: 18ef0aa1c1028354cb91d7e2f3afefb2, type: 3}
       propertyPath: m_RootOrder
       value: 5

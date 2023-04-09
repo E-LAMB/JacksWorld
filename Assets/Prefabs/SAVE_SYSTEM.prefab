@@ -44,7 +44,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   current_location_save_ID: 0
+  should_Autosave: 0
   should_reload: 1
+  ending_gotten: 
+  AutosaveOneSafety: 0
   collective_extraction_wide:
   - 
   - 
@@ -68,7 +71,7 @@ MonoBehaviour:
   data_VHS_3: 0
   data_VHS_4: 0
   data_VHS_5: 0
-  data_PROGRESS_max: 0
+  data_PROGRESS_max: 99
   data_PROGRESS_current: 0
   data_ENDING_good: 0
   data_ENDING_bad: 0

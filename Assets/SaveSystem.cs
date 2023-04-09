@@ -13,6 +13,10 @@ public class SaveSystem : MonoBehaviour
 
     public bool should_reload;
 
+    public string ending_gotten;
+
+    public bool AutosaveOneSafety;
+
     // --- Data Extraction --- //
 
     [Header("Extracted Data (Arrays)")]
@@ -144,6 +148,11 @@ public class SaveSystem : MonoBehaviour
         }
 
         // PROGRESS
+
+        data_PROGRESS_max = Mind.max_save_point;
+
+        Debug.Log("Running Comparison");
+        Debug.Log(current_location_save_ID + " + " + data_PROGRESS_max);
 
         if (current_location_save_ID > data_PROGRESS_max)
         {
@@ -299,8 +308,8 @@ public class SaveSystem : MonoBehaviour
         // 12 = Hub5
         // 13 = Home
 
-        Mind.current_save_point = int.Parse(collective_extraction_PROGRESS[0]);
-        Mind.max_save_point = int.Parse(collective_extraction_PROGRESS[1]);
+        Mind.max_save_point = int.Parse(collective_extraction_PROGRESS[0]);
+        Mind.current_save_point = int.Parse(collective_extraction_PROGRESS[1]);
 
         data_PROGRESS_max = int.Parse(collective_extraction_PROGRESS[0]);
         data_PROGRESS_current = int.Parse(collective_extraction_PROGRESS[1]);
@@ -332,7 +341,10 @@ public class SaveSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (AutosaveOneSafety)
+        {
+            data_PROGRESS_max = Mind.max_save_point;
+        }
     }
 
     // Update is called once per frame
@@ -360,17 +372,28 @@ public class SaveSystem : MonoBehaviour
 
         }
 
-        if (should_Autosave)
-        {
-            Mind.current_save_point = current_location_save_ID;
-            SaveSystem_SAVE();
-            should_Autosave = false;
-        }
-
         if (should_reload)
         {
             should_reload = false;
+            Debug.Log("Checking MAX and CURRENT (as reload)");
+            Debug.Log(Mind.max_save_point);
+            Debug.Log(Mind.current_save_point);
             SaveSystem_LOAD();
+            Debug.Log("Checking MAX and CURRENT (after the reload)");
+            Debug.Log(Mind.max_save_point);
+            Debug.Log(Mind.current_save_point);
+        }
+
+        if (should_Autosave)
+        {
+            Mind.current_save_point = current_location_save_ID;
+            Debug.Log("Checking MAX and CURRENT (as auto)");
+            Debug.Log(Mind.max_save_point);
+            Debug.Log(Mind.current_save_point);
+            if (ending_gotten == "Good") {Mind.seen_good_ending = true;}
+            if (ending_gotten == "Bad") {Mind.seen_bad_ending = true;}
+            SaveSystem_SAVE();
+            should_Autosave = false;
         }
 
     }

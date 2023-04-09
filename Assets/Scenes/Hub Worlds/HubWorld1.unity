@@ -3372,6 +3372,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 479195245879059523, guid: 3ff6131ea87e70843ba8f89ee72e8e81, type: 3}
+      propertyPath: AutosaveOneSafety
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479195245879059523, guid: 3ff6131ea87e70843ba8f89ee72e8e81, type: 3}
       propertyPath: should_save_on_load
       value: 1
       objectReference: {fileID: 0}
