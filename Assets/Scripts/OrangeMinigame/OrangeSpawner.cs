@@ -24,6 +24,7 @@ public class OrangeSpawner : MonoBehaviour
     public bool rolled;
 
     public float warning = 2f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +48,7 @@ public class OrangeSpawner : MonoBehaviour
         if (timer > time_delay - warning && !rolled)
         {
             rolled = true;
-            if (Random.Range(1,3) == 1)
+            if (Random.Range(1,4) != 1)
             {
                 next_is_good = true;
                 orange_next.SetActive(true);

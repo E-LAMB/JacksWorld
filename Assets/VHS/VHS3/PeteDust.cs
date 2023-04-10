@@ -43,7 +43,8 @@ public class PeteDust : MonoBehaviour
         my_source.Play();
         waiting = false;
         wait_time = 0f;
-        wait_threshold = Random.Range(1f, 6f);
+        wait_threshold = Random.Range(6f, 12f);
+        speed += 0.25f;
     }
 
     // Update is called once per frame

@@ -62,13 +62,13 @@ public class NPC_Script : MonoBehaviour
             subtitle_system.ShowDialouge(my_text,my_name);
         }
 
-        if (dia_state == 2 && player_is_close && Input.GetKeyUp(KeyCode.E))
+        if (dia_state == 2 && Input.GetKeyUp(KeyCode.E))
         {
             dia_state = 3;
             Debug.Log(dia_state);
         }
 
-        if (dia_state == 3 && player_is_close && Input.GetKeyDown(KeyCode.E))
+        if (dia_state == 3 && Input.GetKeyDown(KeyCode.E))
         {
             dia_state = 4;
             Mind.player_in_control = true;
