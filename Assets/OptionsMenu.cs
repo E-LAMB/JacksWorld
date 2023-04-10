@@ -28,6 +28,11 @@ public class OptionsMenu : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
+    public void Butt_SceneLevelSelect(int to_go)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(to_go);
+    }
+
     // Start is called before the first frame update
     void Start()
     {

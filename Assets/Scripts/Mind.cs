@@ -20,6 +20,8 @@ public static class Mind
     public static bool seen_orange_vhs;
     public static bool seen_hub_vhs;
 
+    public static bool return_to_vhs_menu;
+
     public static bool seen_good_ending;
     public static bool seen_bad_ending;
 

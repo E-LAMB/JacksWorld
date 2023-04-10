@@ -20,7 +20,7 @@ public class BoxButton_Death : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        box_on_me = Physics2D.OverlapCircle(box_checker.transform.position, 0.1f, box_layer);
+        box_on_me = Physics2D.OverlapCircle(box_checker.transform.position, 0.2f, box_layer);
 
         death_field.SetActive(!box_on_me);
     }

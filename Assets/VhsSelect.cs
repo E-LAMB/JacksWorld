@@ -25,11 +25,12 @@ public class VhsSelect : MonoBehaviour
 
     public void selecting_level()
     {
-        if (selected_location == 0) {UnityEngine.SceneManagement.SceneManager.LoadScene(2);}
-        if (selected_location == 1) {UnityEngine.SceneManagement.SceneManager.LoadScene(3);}
-        if (selected_location == 2) {UnityEngine.SceneManagement.SceneManager.LoadScene(4);}
-        if (selected_location == 3) {UnityEngine.SceneManagement.SceneManager.LoadScene(5);}
-        if (selected_location == 4) {UnityEngine.SceneManagement.SceneManager.LoadScene(6);}
+        Mind.return_to_vhs_menu = true;
+        if (selected_location == 0 && Mind.seen_apple_vhs) {UnityEngine.SceneManagement.SceneManager.LoadScene(15);}
+        if (selected_location == 1 && Mind.seen_flower_vhs) {UnityEngine.SceneManagement.SceneManager.LoadScene(16);}
+        if (selected_location == 2 && Mind.seen_mines_vhs) {UnityEngine.SceneManagement.SceneManager.LoadScene(17);}
+        if (selected_location == 3 && Mind.seen_orange_vhs) {UnityEngine.SceneManagement.SceneManager.LoadScene(18);}
+        if (selected_location == 4 && Mind.seen_hub_vhs) {UnityEngine.SceneManagement.SceneManager.LoadScene(19);}
     }
 
     public void go_to_level(int to_go)

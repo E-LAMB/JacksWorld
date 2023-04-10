@@ -73,7 +73,7 @@ public class SaveSystem : MonoBehaviour
 
         // ENDING
 
-        content += "0.0";
+        content += "False.False";
 
         // ----- Data Gets Saved ----- //
 
@@ -316,23 +316,23 @@ public class SaveSystem : MonoBehaviour
 
         // Assigning Data to Variables (ENDINGS)
 
-        if (collective_extraction_ENDING[0] == "1")
+        if (collective_extraction_ENDING[0] == "False")
         {
-            Mind.seen_good_ending = true;
+            Mind.seen_good_ending = false;
             data_ENDING_good = 0;
         } else
         {
-            Mind.seen_good_ending = false;
+            Mind.seen_good_ending = true;
             data_ENDING_good = 1;
         }
 
-        if (collective_extraction_ENDING[1] == "1")
+        if (collective_extraction_ENDING[1] == "False")
         {
-            Mind.seen_bad_ending = true;
+            Mind.seen_bad_ending = false;
             data_ENDING_bad = 0;
         } else
         {
-            Mind.seen_bad_ending = false;
+            Mind.seen_bad_ending = true;
             data_ENDING_bad = 1;
         }
 
