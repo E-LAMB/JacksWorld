@@ -19,6 +19,8 @@ public class BeanEnemy : MonoBehaviour
     public LayerMask player_layer;
     public LayerMask sight_layer;
 
+    public bool random_rot = true;
+
     public Vector3 player_direction;
     public Vector3 movement_direction;
     
@@ -31,7 +33,10 @@ public class BeanEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        self.localRotation = Quaternion.Euler(0f,0f,Random.Range(0f,360f));
+        if (random_rot)
+        {
+            self.localRotation = Quaternion.Euler(0f,0f,Random.Range(0f,360f));
+        }
     }
 
     // Update is called once per frame

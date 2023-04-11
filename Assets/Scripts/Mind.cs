@@ -24,6 +24,7 @@ public static class Mind
 
     public static bool seen_good_ending;
     public static bool seen_bad_ending;
+    public static bool seen_safe_ending;
 
     public static int current_save_point;
     public static int max_save_point;

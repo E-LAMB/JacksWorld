@@ -98,4 +98,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Options.unity
     guid: e0ac9583049df4146b4e9a4a62fcdf40
+  - enabled: 1
+    path: Assets/Scenes/DemonHut.unity
+    guid: 976ce1d83e8a9934a8f318960c1a9561
+  - enabled: 1
+    path: Assets/Scenes/ParaWorld.unity
+    guid: 58a5a3d3ce4686e4bb3a2a1b86de3eb6
+  - enabled: 1
+    path: Assets/Scenes/ParaWalking.unity
+    guid: d607209126dccb241ac97f3c81c6b250
+  - enabled: 1
+    path: Assets/Scenes/StolenEnding.unity
+    guid: 2a8a292aa312e5f41927d5160904f14f
   m_configObjects: {}

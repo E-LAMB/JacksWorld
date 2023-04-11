@@ -1238,6 +1238,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -1323,6 +1324,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 6
@@ -2563,6 +2565,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -2663,6 +2666,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 6
@@ -3577,6 +3581,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -6050,6 +6055,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 10
@@ -6726,6 +6732,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -6959,6 +6966,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -7289,6 +7297,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 20
@@ -7485,6 +7494,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -7585,6 +7595,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -8934,6 +8945,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -9100,6 +9112,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -10098,6 +10111,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -11946,6 +11960,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -12046,6 +12061,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -12255,6 +12271,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -12816,6 +12833,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -13400,6 +13418,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -13902,6 +13921,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -14111,6 +14131,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -15066,6 +15087,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 20
@@ -16403,6 +16425,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -17338,6 +17361,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -17666,6 +17690,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 25
@@ -18335,6 +18360,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -18701,6 +18727,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -18801,6 +18828,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -19143,6 +19171,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -19466,6 +19495,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -19566,6 +19596,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -20000,6 +20031,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -21923,6 +21955,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -22023,6 +22056,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -22912,6 +22946,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -23780,6 +23815,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 6
@@ -24013,6 +24049,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -24222,6 +24259,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
@@ -24354,6 +24392,7 @@ MonoBehaviour:
   sight_layer:
     serializedVersion: 2
     m_Bits: 512
+  random_rot: 1
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5

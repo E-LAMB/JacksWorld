@@ -64,6 +64,7 @@ MonoBehaviour:
   collective_extraction_ENDING:
   - 
   - 
+  - 
   char_widesplit: 47
   char_smallsplit: 46
   data_VHS_1: 0
@@ -75,3 +76,4 @@ MonoBehaviour:
   data_PROGRESS_current: 0
   data_ENDING_good: 0
   data_ENDING_bad: 0
+  data_ENDING_safe: 0

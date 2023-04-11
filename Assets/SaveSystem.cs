@@ -49,6 +49,7 @@ public class SaveSystem : MonoBehaviour
 
     public int data_ENDING_good;
     public int data_ENDING_bad;
+    public int data_ENDING_safe;
 
     // 0 = Not Seen
     // 1 = Seen
@@ -73,7 +74,7 @@ public class SaveSystem : MonoBehaviour
 
         // ENDING
 
-        content += "False.False";
+        content += "False.False.False";
 
         // ----- Data Gets Saved ----- //
 
@@ -167,7 +168,8 @@ public class SaveSystem : MonoBehaviour
         // ENDING
 
         content += Mind.seen_good_ending.ToString() + ".";
-        content += Mind.seen_bad_ending.ToString();
+        content += Mind.seen_bad_ending.ToString() + ".";
+        content += Mind.seen_safe_ending.ToString();
 
         // ----- Data Gets Saved ----- //
 
@@ -336,6 +338,16 @@ public class SaveSystem : MonoBehaviour
             data_ENDING_bad = 1;
         }
 
+        if (collective_extraction_ENDING[2] == "False")
+        {
+            Mind.seen_safe_ending = false;
+            data_ENDING_safe = 0;
+        } else
+        {
+            Mind.seen_safe_ending = true;
+            data_ENDING_safe = 1;
+        }
+
     }
 
     // Start is called before the first frame update
@@ -392,6 +404,7 @@ public class SaveSystem : MonoBehaviour
             Debug.Log(Mind.current_save_point);
             if (ending_gotten == "Good") {Mind.seen_good_ending = true;}
             if (ending_gotten == "Bad") {Mind.seen_bad_ending = true;}
+            if (ending_gotten == "Safe") {Mind.seen_safe_ending = true;}
             SaveSystem_SAVE();
             should_Autosave = false;
         }
