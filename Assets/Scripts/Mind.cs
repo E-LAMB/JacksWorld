@@ -25,6 +25,14 @@ public static class Mind
     public static bool seen_good_ending;
     public static bool seen_bad_ending;
     public static bool seen_safe_ending;
+    public static bool seen_stolen_ending;
+
+    public static int para_progress;
+    // 0 = Has gotten no endings
+    // 1 = Has gotten an ending but has not found the crown
+    // 2 = Found crown in APPLEFARM revisit 
+    // 3 = Has revived Para
+    // 4 = Has gotten Para ending
 
     public static int current_save_point;
     public static int max_save_point;

@@ -14,6 +14,8 @@ public class VHS : MonoBehaviour
 
     public GameObject self;
 
+    public SaveSystem sys;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,8 @@ public class VHS : MonoBehaviour
         if (vhs_id == 3) {Mind.mines_vhs = true;}
         if (vhs_id == 4) {Mind.orange_vhs = true;}
         if (vhs_id == 5) {Mind.hub_vhs = true;}
+
+        sys.SaveSystem_SAVE();
 
         self.SetActive(false);
     }

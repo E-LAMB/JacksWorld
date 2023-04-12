@@ -6,108 +6,114 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PreMenu.unity
+    path: Assets/All Scenes/Menus/PreMenu.unity
     guid: d62044a90c1a7254492b8adb2238b03e
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/All Scenes/Menus/MainMenu.unity
     guid: 132ecf8150091cf429297049d947a14c
   - enabled: 1
-    path: Assets/Scenes/Hub Worlds/HubWorld1.unity
+    path: Assets/All Scenes/Hubs/HubWorld1.unity
     guid: 90d671eeefb9e4745bff3d1b0c647be7
   - enabled: 1
-    path: Assets/Scenes/AppleFarmyard.unity
+    path: Assets/All Scenes/AppleFarmyard.unity
     guid: 485ea64da76f1d64ba485cbbede00878
   - enabled: 1
-    path: Assets/Scenes/Hub Worlds/HubWorld2.unity
+    path: Assets/All Scenes/Hubs/HubWorld2.unity
     guid: e8257a806af9c0549ade2092687c65f6
   - enabled: 1
-    path: Assets/Scenes/FlowerField.unity
+    path: Assets/All Scenes/FlowerField.unity
     guid: d999e638ea16898428b2863509a0d79a
   - enabled: 1
-    path: Assets/Scenes/Hub Worlds/HubWorld3.unity
+    path: Assets/All Scenes/Hubs/HubWorld3.unity
     guid: 7ac4ddeeedd82224eaa36f10479edebc
   - enabled: 1
-    path: Assets/Scenes/Mines.unity
+    path: Assets/All Scenes/Mines.unity
     guid: 2632b037fab0d4542a533209d0bd4025
   - enabled: 1
-    path: Assets/Scenes/Hub Worlds/HubWorld4.unity
+    path: Assets/All Scenes/Hubs/HubWorld4.unity
     guid: 689a3d3ebe4179341a0bb14e78e70cf0
   - enabled: 1
-    path: Assets/Scenes/Orange.unity
+    path: Assets/All Scenes/Orange.unity
     guid: 5c44d4ae79a4d8c4583884ea71e20508
   - enabled: 1
-    path: Assets/Scenes/OrangeSorterGame.unity
+    path: Assets/All Scenes/OrangeSorterGame.unity
     guid: 4ae0a28a8c9860f4e8fa74f0708f0451
   - enabled: 1
-    path: Assets/Scenes/OutOfBounds.unity
+    path: Assets/All Scenes/OutOfBounds.unity
     guid: 686dbb8106db55f40a636546f71f5e30
   - enabled: 1
-    path: Assets/Scenes/AppleFarmyardRevisit.unity
+    path: Assets/All Scenes/AppleFarmyardRevisit.unity
     guid: 593ff3403bf073f43b79ac6b42105aa0
   - enabled: 1
-    path: Assets/Scenes/Hub Worlds/HubWorld5.unity
+    path: Assets/All Scenes/Hubs/HubWorld5.unity
     guid: 0c7703f59793f1f48bd66f955be0a7f2
   - enabled: 1
-    path: Assets/Scenes/Home.unity
+    path: Assets/All Scenes/Home.unity
     guid: 6db620829f947ac4c8383e582b7bdb13
   - enabled: 1
-    path: Assets/Scenes/VHS/VHS1.unity
+    path: Assets/All Scenes/VHS Tapes/VHS1.unity
     guid: 0b2a320d4d2a4aa43aa6b3bc16d04e51
   - enabled: 1
-    path: Assets/Scenes/VHS/VHS2.unity
+    path: Assets/All Scenes/VHS Tapes/VHS2.unity
     guid: 4a91fd1fba2143a42b07a0252ac5612e
   - enabled: 1
-    path: Assets/Scenes/VHS/VHS3.unity
+    path: Assets/All Scenes/VHS Tapes/VHS3.unity
     guid: 088fa76e19c8f2e47a144ed6a74feabd
   - enabled: 1
-    path: Assets/Scenes/VHS/VHS4.unity
+    path: Assets/All Scenes/VHS Tapes/VHS4.unity
     guid: 294e0b98e28666b41a3476e1268edccd
   - enabled: 1
-    path: Assets/Scenes/VHS/VHS5.unity
+    path: Assets/All Scenes/VHS Tapes/VHS5.unity
     guid: 4cdad30a805be31488ef4eba889d4532
   - enabled: 1
-    path: Assets/Scenes/Hub After VHS/Hub1_AV.unity
+    path: Assets/All Scenes/Hubs/Hub1_AV.unity
     guid: ef828b7325795534d825753d7ca1ed36
   - enabled: 1
-    path: Assets/Scenes/Hub After VHS/Hub2_AV.unity
+    path: Assets/All Scenes/Hubs/Hub2_AV.unity
     guid: ed287615bd9e499429ea18569ebc2b05
   - enabled: 1
-    path: Assets/Scenes/Hub After VHS/Hub3_AV.unity
+    path: Assets/All Scenes/Hubs/Hub3_AV.unity
     guid: a180b76bab70de346876a7aa03130799
   - enabled: 1
-    path: Assets/Scenes/Hub After VHS/Hub4_AV.unity
+    path: Assets/All Scenes/Hubs/Hub4_AV.unity
     guid: 153cc22317829a047aa56856471ef7fd
   - enabled: 1
-    path: Assets/Scenes/Hub After VHS/Hub5_AV.unity
+    path: Assets/All Scenes/Hubs/Hub5_AV.unity
     guid: 1cb7d2b5c1c38624a829cee0e8ca3936
   - enabled: 1
-    path: Assets/Scenes/PriestConfrontation.unity
+    path: Assets/All Scenes/PriestConfrontation.unity
     guid: dd1cb2653a9e2af469e0a2ef5d8ccd44
   - enabled: 1
-    path: Assets/Scenes/GoodEnding.unity
+    path: Assets/All Scenes/Endings/GoodEnding.unity
     guid: f10833cf85393804e908b1fadd65ddbc
   - enabled: 1
-    path: Assets/Scenes/BadEnding.unity
+    path: Assets/All Scenes/Endings/BadEnding.unity
     guid: 29ddd5a7d6daadd4ebe99043ebb8454e
   - enabled: 1
-    path: Assets/Scenes/AreaSelect.unity
+    path: Assets/All Scenes/Menus/AreaSelect.unity
     guid: 9725c79361446bc43830c63966c14a8a
   - enabled: 1
-    path: Assets/Scenes/VhsGallery.unity
+    path: Assets/All Scenes/Menus/VhsGallery.unity
     guid: 209dc4a05a473334e9042e0c825bd9aa
   - enabled: 1
-    path: Assets/Scenes/Options.unity
+    path: Assets/All Scenes/Menus/Options.unity
     guid: e0ac9583049df4146b4e9a4a62fcdf40
   - enabled: 1
-    path: Assets/Scenes/DemonHut.unity
+    path: Assets/All Scenes/DemonHut.unity
     guid: 976ce1d83e8a9934a8f318960c1a9561
   - enabled: 1
-    path: Assets/Scenes/ParaWorld.unity
+    path: Assets/All Scenes/ParaWorld.unity
     guid: 58a5a3d3ce4686e4bb3a2a1b86de3eb6
   - enabled: 1
-    path: Assets/Scenes/ParaWalking.unity
+    path: Assets/All Scenes/ParaWalking.unity
     guid: d607209126dccb241ac97f3c81c6b250
   - enabled: 1
-    path: Assets/Scenes/StolenEnding.unity
+    path: Assets/All Scenes/Endings/StolenEnding.unity
     guid: 2a8a292aa312e5f41927d5160904f14f
+  - enabled: 1
+    path: Assets/All Scenes/Endings/SafeEnding.unity
+    guid: cd36db53a710460419877ae7e12d19d7
+  - enabled: 1
+    path: Assets/All Scenes/Menus/Credits.unity
+    guid: b43c68497e46649448430e1879fd9569
   m_configObjects: {}

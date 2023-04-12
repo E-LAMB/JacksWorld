@@ -61,7 +61,9 @@ MonoBehaviour:
   collective_extraction_PROGRESS:
   - 
   - 
+  - 
   collective_extraction_ENDING:
+  - 
   - 
   - 
   - 
@@ -74,6 +76,8 @@ MonoBehaviour:
   data_VHS_5: 0
   data_PROGRESS_max: 99
   data_PROGRESS_current: 0
+  data_PROGRESS_para: 0
   data_ENDING_good: 0
   data_ENDING_bad: 0
   data_ENDING_safe: 0
+  data_ENDING_stolen: 0
