@@ -65,7 +65,7 @@ public class VHS_Clock : MonoBehaviour
 
         if (0f > delay_time)
         {
-            if (5f > speed_modifier)
+            if (10f > speed_modifier)
             {
                 speed_modifier += Time.deltaTime / 2f;
             }

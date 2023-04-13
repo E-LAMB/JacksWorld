@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class ReturnToMenu : MonoBehaviour
 {
 
-    public bool can_return;
-    public bool should_enable_movement;
+    //public bool can_return;
+    //public bool should_enable_movement;
 
-    bool final_return;
+    //bool final_return;
 
     public float hold_timer;
     float time_needed = 4.5f;
@@ -23,20 +23,22 @@ public class ReturnToMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (should_enable_movement)
-        {
-            Mind.player_in_control = true;
-        }
+        //if (should_enable_movement)
+        //{
+        //    Mind.player_in_control = true;
+        //}
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         final_return = can_return;
         if (!Mind.player_in_control)
         {
             final_return = false;
         }
+        */
 
         fraction = hold_timer / time_to_fill;
         my_image.fillAmount = fraction; 

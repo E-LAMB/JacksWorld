@@ -9,6 +9,8 @@ public class VHS_Exit : MonoBehaviour
 
     public int which_was_seen;
 
+    public SaveSystem the_sys;
+
     public void switch_scenes()
     {
         if (which_was_seen == 1) {Mind.seen_apple_vhs = true;}
@@ -16,6 +18,8 @@ public class VHS_Exit : MonoBehaviour
         if (which_was_seen == 3) {Mind.seen_mines_vhs = true;}
         if (which_was_seen == 4) {Mind.seen_orange_vhs = true;}
         if (which_was_seen == 5) {Mind.seen_hub_vhs = true;}
+
+        the_sys.SaveSystem_SAVE();
 
         if (Mind.return_to_vhs_menu)
         {
