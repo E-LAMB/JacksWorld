@@ -10,6 +10,8 @@ public class MenuSystems : MonoBehaviour
     public TMP_Text the_text;
     public bool do_extra;
 
+    public bool deac;
+
     public void Butt_New()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(2);
@@ -82,6 +84,12 @@ public class MenuSystems : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        if (deac)
+        {
+            Mind.return_to_vhs_menu = false;
+        }
+
         if (do_extra)
         {
             save_system.SaveSystem_LOAD();

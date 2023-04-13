@@ -743,6 +743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   save_system: {fileID: 1708786728}
   the_text: {fileID: 1379068307}
+  do_extra: 1
 --- !u!1 &198509299
 GameObject:
   m_ObjectHideFlags: 0
