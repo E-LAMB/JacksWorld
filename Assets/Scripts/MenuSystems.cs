@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.IO;
 
 public class MenuSystems : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class MenuSystems : MonoBehaviour
     public bool do_extra;
 
     public bool deac;
+
+    public void AccessForm()
+    {
+        Application.OpenURL("https://forms.gle/KakJxdurpSNmEiK48");
+    }
 
     public void Butt_New()
     {

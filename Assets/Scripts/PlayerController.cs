@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -45,6 +46,15 @@ public class PlayerController : MonoBehaviour
 
     public Transform self;
 
+    public Image dash_icon;
+    public Image jump_icon;
+    public Image dash_icon_back;
+    public Image jump_icon_back;
+
+    public float dash_fraction;
+    public float icon_dash_value;
+    public float jump_fade = 0f;
+
     public void Jump(float height)
     {
         my_rigidbody.velocity = new Vector2(my_rigidbody.velocity.x,height);
@@ -69,11 +79,13 @@ public class PlayerController : MonoBehaviour
     {
         currently_dashing = true;
         my_animator.SetTrigger("Dashed");
+        icon_dash_value = max_dashing_cooldown;
     }
 
     void ConcludeDash()
     {
         dashing_heat = 0f;
+        icon_dash_value = max_dashing_cooldown;
         dashing_cooldown = max_dashing_cooldown;
         currently_dashing = false;
         dashing_ready = false;
@@ -83,10 +95,45 @@ public class PlayerController : MonoBehaviour
     {
         SetCheckpoint();
         Mind.player_in_control = true;
+        dash_icon = GameObject.Find("DashIcon").GetComponent<Image>();
+        jump_icon = GameObject.Find("JumpIcon").GetComponent<Image>();
+        dash_icon_back = GameObject.Find("DashIconBack").GetComponent<Image>();
+        jump_icon_back = GameObject.Find("JumpIconBack").GetComponent<Image>();
+        dashing_cooldown = 0f;
     }
 
     void Update()
     {
+        if (dashing_unlocked && Mind.player_in_control)
+        {
+            dash_fraction = 1f - (dashing_cooldown / max_dashing_cooldown);
+            dash_icon.fillAmount = dash_fraction;
+            dash_icon.enabled = true;
+            dash_icon_back.enabled = true;
+
+        } else
+        {
+            dash_icon.enabled = false;
+            dash_icon_back.enabled = false;
+        }
+
+        if (spare_jump_enabled && Mind.player_in_control)
+        {
+            if (spare_jump_docked)
+            {
+                jump_icon.color = new Vector4 (1f, 1f, 1f, 1f);
+            } else
+            {
+                jump_icon.color = new Vector4 (1f, 1f, 1f, jump_fade);
+            }
+            jump_icon.enabled = true;
+            jump_icon_back.enabled = true;
+        } else
+        {
+            jump_icon.enabled = false;
+            jump_icon_back.enabled = false;
+        }
+
         if (Mind.player_in_control)
         {
             got_frozen = false;
@@ -122,8 +169,9 @@ public class PlayerController : MonoBehaviour
                 my_rigidbody.velocity = new Vector2 (last_direction*dash_speed,0f);
             }
 
-            if (dashing_cooldown > 0)
+            if (dashing_cooldown > 0 && !currently_dashing)
             {
+                icon_dash_value -= Time.deltaTime;
                 dashing_cooldown -= Time.deltaTime;
             } else
             {
