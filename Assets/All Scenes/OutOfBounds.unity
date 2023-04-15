@@ -1568,7 +1568,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &137159681
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1654,7 +1654,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 6
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &146589545
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2895,7 +2895,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &249444885
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2996,7 +2996,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 6
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &256261241
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3911,7 +3911,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &320368311
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6657,7 +6657,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 10
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &547320156
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7443,7 +7443,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &575074378
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7677,7 +7677,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &592513823
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8008,7 +8008,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 20
-  speed: 0.5
+  speed: 0.35
 --- !u!1 &633213754
 GameObject:
   m_ObjectHideFlags: 0
@@ -8205,7 +8205,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &635390142
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8306,7 +8306,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &653322437
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9714,7 +9714,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &757603352
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9881,7 +9881,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &783724082
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10880,7 +10880,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &833612712
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12736,7 +12736,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &983163817
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12837,7 +12837,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &983855504
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13156,7 +13156,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &995866338
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13718,7 +13718,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1076948907
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14303,7 +14303,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1110860459
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14806,7 +14806,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1172625225
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15016,7 +15016,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1189932805
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16081,7 +16081,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 20
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1325172982
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17419,7 +17419,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1421871320
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18613,7 +18613,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1513556196
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18942,7 +18942,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 25
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1520613599
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19721,7 +19721,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1591995663
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20088,7 +20088,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1609106219
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20189,7 +20189,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1609231734
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20532,7 +20532,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1621710450
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20856,7 +20856,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1679926239
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20957,7 +20957,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1691008717
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21392,7 +21392,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1722400321
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22763,14 +22763,14 @@ RectTransform:
   m_GameObject: {fileID: 1789079559}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 5}
-  m_LocalScale: {x: 0.0050000004, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.01, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 14716326}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3335, y: -29.15}
+  m_AnchoredPosition: {x: -11.841688, y: -27.9}
   m_SizeDelta: {x: 40, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1798092264
@@ -23491,7 +23491,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1807991137
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23701,7 +23701,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1833517848
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24591,7 +24591,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1913231573
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25460,7 +25460,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 6
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &1979704297
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25694,7 +25694,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &2035565287
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25904,7 +25904,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &2067496973
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26037,7 +26037,7 @@ MonoBehaviour:
   player_direction: {x: 0, y: 0, z: 0}
   movement_direction: {x: 0, y: 0, z: 0}
   wakeup_range: 5
-  speed: 0.5
+  speed: 0.35
 --- !u!58 &2087226947
 CircleCollider2D:
   m_ObjectHideFlags: 0

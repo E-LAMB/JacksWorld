@@ -3954,7 +3954,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11890,7 +11890,7 @@ GameObject:
   - component: {fileID: 182766156}
   - component: {fileID: 182766158}
   - component: {fileID: 182766157}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Dirt (440)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35608,7 +35608,7 @@ GameObject:
   - component: {fileID: 663718765}
   - component: {fileID: 663718767}
   - component: {fileID: 663718766}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Dirt (457)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48355,7 +48355,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -48464,7 +48464,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -63324,7 +63324,7 @@ GameObject:
   - component: {fileID: 1283932822}
   - component: {fileID: 1283932824}
   - component: {fileID: 1283932823}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Dirt (439)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86737,7 +86737,8 @@ MonoBehaviour:
   my_prompt: {fileID: 652212425}
   my_name: SUNNY
   subtitle_system: {fileID: 1519905031}
-  my_text: Thank you for the glasses!
+  my_text: Thank you for the glasses Jack! Oh- I saw Molly earlier run through here
+    all panicky! I think you should go check on her.
   show_prompt: 0
   special_range: 
 --- !u!95 &1785138711

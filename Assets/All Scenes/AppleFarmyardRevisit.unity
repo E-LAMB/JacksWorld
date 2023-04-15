@@ -15984,7 +15984,7 @@ GameObject:
   - component: {fileID: 424705971}
   - component: {fileID: 424705973}
   - component: {fileID: 424705972}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Apple (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31359,7 +31359,7 @@ GameObject:
   - component: {fileID: 806261419}
   - component: {fileID: 806261421}
   - component: {fileID: 806261420}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Apple (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68031,7 +68031,7 @@ GameObject:
   - component: {fileID: 1747118418}
   - component: {fileID: 1747118420}
   - component: {fileID: 1747118419}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Apple (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

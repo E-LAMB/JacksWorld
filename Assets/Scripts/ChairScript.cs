@@ -60,7 +60,7 @@ public class ChairScript : MonoBehaviour
         if (subtitle_time > 7f && !done_dialouge)
         {
             done_dialouge = true;
-            sub_sys.ShowDialouge("I hope you are enjoying that, You can stay with me as long as you want. Okay? You're safe here. Once again - Sorry for the lack of content entertainment.", "Dormis");
+            sub_sys.ShowDialouge("I hope you are enjoying that, You can stay with me as long as you want. Okay? You're safe here. Once again - Sorry for the lack of variety.", "Dormis");
         }
 
         if (subtitle_time > 7f && Input.GetKeyDown(KeyCode.E))

@@ -30297,8 +30297,8 @@ MonoBehaviour:
   my_prompt: {fileID: 173434314}
   my_name: JACK
   subtitle_system: {fileID: 1519905031}
-  my_text: Mom's Bedroom. It used to be Dad's bedroom too, But then they started
-    arguing.
+  my_text: Mom's Bedroom. It used to be Dad's bedroom too. The door has a lock on
+    the inside. Mom used to use it whenever he got mad.
   show_prompt: 0
   special_range: door
 --- !u!4 &1625281113

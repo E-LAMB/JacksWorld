@@ -147294,7 +147294,7 @@ MonoBehaviour:
   my_name: ORA
   subtitle_system: {fileID: 1519905031}
   my_text: Hi Jack, Long time no see! Could you help me out? I need to sort these
-    boxes of oranges from the rotten fruits. Do you  mind helping me out?
+    boxes of oranges from the rotten fruits. Do you    mind helping me out?
   show_prompt: 0
   special_range: 
 --- !u!212 &2107524771
