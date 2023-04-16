@@ -24,6 +24,7 @@ public class DontDestroyOnLoadMusic : MonoBehaviour
             if (new_track == 2) {my_source.clip = tracks[new_track];}
             if (new_track == 3) {my_source.clip = tracks[new_track];}
             if (new_track == 4) {my_source.clip = tracks[new_track];}
+            if (new_track == 5) {my_source.clip = tracks[new_track];} 
  
             my_source.Play();
                      
