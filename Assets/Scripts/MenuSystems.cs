@@ -15,7 +15,7 @@ public class MenuSystems : MonoBehaviour
 
     public void AccessForm()
     {
-        Application.OpenURL("https://forms.gle/KakJxdurpSNmEiK48");
+        Application.OpenURL("https://forms.gle/RX3YGT6sM8tEtJKd9");
     }
 
     public void Butt_New()

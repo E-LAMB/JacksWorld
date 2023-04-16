@@ -77,8 +77,6 @@ public class PeteDust : MonoBehaviour
     void Update()
     {
 
-        my_smoke.SetActive(is_outside_waiting);
-
         doors_are_open = my_doors.doors_open;
 
         is_outside = Physics.CheckSphere(gameObject.transform.position, 0.1f, death_layer);
@@ -102,12 +100,14 @@ public class PeteDust : MonoBehaviour
 
         if (self.position.x > -0.1f && 0.1f > self.position.x && !is_outside_waiting && outside_time > 0f)
         {
+            my_smoke.SetActive(true);
             movement_speed = 0f;
             outside_time -= Time.deltaTime;
             if (0.1f > outside_time)
             {
                 is_outside_waiting = true;
                 movement_speed = speed;
+                my_smoke.SetActive(false);
             }
         }
 
