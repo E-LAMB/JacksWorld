@@ -1336,6 +1336,7 @@ MonoBehaviour:
   save_system: {fileID: 0}
   the_text: {fileID: 0}
   do_extra: 0
+  deac: 0
 --- !u!114 &285399367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5177,8 +5178,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5452,7 +5453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b60e3e3abc223264da655b23b02ec8fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  max_word_count: 100
+  max_word_count: 350
   word_count: 0
   built_string: 
   word_collection:

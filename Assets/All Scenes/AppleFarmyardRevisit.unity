@@ -51017,8 +51017,12 @@ MonoBehaviour:
   sprite_trans: {fileID: 797756156}
   self: {fileID: 1340890672}
   dash_icon: {fileID: 0}
+  jump_icon: {fileID: 0}
+  dash_icon_back: {fileID: 0}
+  jump_icon_back: {fileID: 0}
   dash_fraction: 0
   icon_dash_value: 0
+  jump_fade: 0
 --- !u!70 &1340890676
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -75944,7 +75948,7 @@ Transform:
   m_GameObject: {fileID: 1992268994}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 130.75, y: -359.5, z: 0}
-  m_LocalScale: {x: 200, y: 5, z: 1}
+  m_LocalScale: {x: 20000, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14

@@ -57,7 +57,7 @@ public class Para : MonoBehaviour
 
             wait_time += Time.deltaTime;
 
-            if (wait_time > 25f) 
+            if (wait_time > 13f) 
             {
                 in_sight = false;
             } else
@@ -65,12 +65,12 @@ public class Para : MonoBehaviour
                 in_sight = true;
             }
 
-            if (!Physics2D.OverlapCircle(transform.position, wakeup_range, player_layer) && wait_time < 24f)
+            if (!Physics2D.OverlapCircle(transform.position, wakeup_range, player_layer) && wait_time < 14f)
             {
                 is_awake = false;
             }
 
-            if (wait_time > 25f)
+            if (wait_time > 15f)
             {
                 Mind.player_in_control = false;
             }

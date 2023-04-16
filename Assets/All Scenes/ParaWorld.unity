@@ -48571,7 +48571,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 734b3082afa907a42bc4e2ba0bf21841, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27b70999fdc728c42b8e79c1b082f167, type: 3}
   m_Color: {r: 0.17359024, g: 0, b: 0.24528301, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -68668,7 +68668,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 734b3082afa907a42bc4e2ba0bf21841, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27b70999fdc728c42b8e79c1b082f167, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -80401,8 +80401,12 @@ MonoBehaviour:
   sprite_trans: {fileID: 797756156}
   self: {fileID: 1340890672}
   dash_icon: {fileID: 0}
+  jump_icon: {fileID: 0}
+  dash_icon_back: {fileID: 0}
+  jump_icon_back: {fileID: 0}
   dash_fraction: 0
   icon_dash_value: 0
+  jump_fade: 0
 --- !u!70 &1340890676
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -92969,7 +92973,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 734b3082afa907a42bc4e2ba0bf21841, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27b70999fdc728c42b8e79c1b082f167, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
