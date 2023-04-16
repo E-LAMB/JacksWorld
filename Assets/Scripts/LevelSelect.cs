@@ -22,6 +22,7 @@ public class LevelSelect : MonoBehaviour
 
     public void selecting_level()
     {
+        Mind.played_select = true;
         if (selected_location == 1) {UnityEngine.SceneManagement.SceneManager.LoadScene(2);}
         if (selected_location == 2) {UnityEngine.SceneManagement.SceneManager.LoadScene(3);}
         if (selected_location == 3) {UnityEngine.SceneManagement.SceneManager.LoadScene(4);}
@@ -39,6 +40,7 @@ public class LevelSelect : MonoBehaviour
 
     public void go_to_level(int to_go)
     {
+        Mind.played_select = true;
         UnityEngine.SceneManagement.SceneManager.LoadScene(to_go);
     }
 

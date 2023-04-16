@@ -20,6 +20,8 @@ public static class Mind
     public static AudioClip jump_clip;
     public static AudioClip dash_clip;
     public static AudioClip death_clip;
+    public static AudioClip select_clip;
+    public static bool played_select;
 
     public static float volume = 1f;
 

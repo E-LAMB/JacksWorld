@@ -20,17 +20,19 @@ public class MenuSystems : MonoBehaviour
 
     public void Butt_New()
     {
+        Mind.played_select = true;
         UnityEngine.SceneManagement.SceneManager.LoadScene(2);
     }
 
     public void Butt_Target(int go_to)
     {
+        Mind.played_select = true;
         UnityEngine.SceneManagement.SceneManager.LoadScene(go_to);
     }
 
     public void Butt_Load()
     {
-
+        Mind.played_select = true;
         save_system.SaveSystem_LOAD();
 
         // 0 = Hasn't played the game
@@ -66,7 +68,7 @@ public class MenuSystems : MonoBehaviour
 
     public void Butt_SceneLevelSelect()
     {
-
+        Mind.played_select = true;
         if (save_system.data_PROGRESS_current == 0) 
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);
@@ -79,11 +81,13 @@ public class MenuSystems : MonoBehaviour
 
     public void Butt_Options()
     {
+        Mind.played_select = true;
         UnityEngine.SceneManagement.SceneManager.LoadScene(30);
     }
 
     public void Butt_Quit()
     {
+        Mind.played_select = true;
         Application.Quit();
     }
 

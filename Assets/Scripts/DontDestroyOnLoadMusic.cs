@@ -7,6 +7,7 @@ public class DontDestroyOnLoadMusic : MonoBehaviour
 
     public int current_track;
     public AudioSource my_source;
+    public AudioSource singluar;
 
     public AudioClip[] tracks;
 
@@ -36,6 +37,13 @@ public class DontDestroyOnLoadMusic : MonoBehaviour
     void Update()
     {
         my_source.volume = Mind.volume;
+        /*
+        if (Mind.played_select)
+        {
+            Mind.played_select = false;
+            singluar.PlayOneShot(Mind.select_clip);
+        }
+        */
     }
 
     void Awake()

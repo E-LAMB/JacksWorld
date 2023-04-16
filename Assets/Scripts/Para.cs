@@ -28,6 +28,8 @@ public class Para : MonoBehaviour
 
     public float wait_time;
 
+    public GameObject music_cutter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,7 +59,7 @@ public class Para : MonoBehaviour
 
             wait_time += Time.deltaTime;
 
-            if (wait_time > 13f) 
+            if (wait_time > 22f) 
             {
                 in_sight = false;
             } else
@@ -65,12 +67,12 @@ public class Para : MonoBehaviour
                 in_sight = true;
             }
 
-            if (!Physics2D.OverlapCircle(transform.position, wakeup_range, player_layer) && wait_time < 14f)
+            if (!Physics2D.OverlapCircle(transform.position, wakeup_range, player_layer) && wait_time < 24f)
             {
                 is_awake = false;
             }
 
-            if (wait_time > 15f)
+            if (wait_time > 25f)
             {
                 Mind.player_in_control = false;
             }
@@ -88,6 +90,8 @@ public class Para : MonoBehaviour
 
                 Vector3 target = player.position;
                 target.z = self.position.z;
+
+                music_cutter.SetActive(true);
 
                 self.position = Vector3.MoveTowards(self.position, target, Time.deltaTime * speed);
             }

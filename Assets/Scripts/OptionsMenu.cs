@@ -17,12 +17,14 @@ public class OptionsMenu : MonoBehaviour
 
     public void AreYouSure()
     {
+        Mind.played_select = true;
         RGD_button_1.SetActive(false);
         RGD_button_2.SetActive(true);
     }
 
     public void ResetGameData()
     {
+        Mind.played_select = true;
         Mind.has_done_startup = false;
         the_sys.SaveSystem_RESET();
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
@@ -30,6 +32,7 @@ public class OptionsMenu : MonoBehaviour
 
     public void Butt_SceneLevelSelect(int to_go)
     {
+        Mind.played_select = true;
         UnityEngine.SceneManagement.SceneManager.LoadScene(to_go);
     }
 

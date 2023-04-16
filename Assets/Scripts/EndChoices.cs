@@ -31,6 +31,7 @@ public class EndChoices : MonoBehaviour
 
     public void ChoiceMade(int towhere)
     {
+        Mind.played_select = true;
         UnityEngine.SceneManagement.SceneManager.LoadScene(towhere);
     }
 
