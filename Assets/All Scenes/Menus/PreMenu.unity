@@ -700,6 +700,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+--- !u!1 &1842556487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842556489}
+  - component: {fileID: 1842556488}
+  m_Layer: 0
+  m_Name: Clip Uploader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1842556488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842556487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc05ae09ecedb744887f0feeace9fc8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upload_jump: {fileID: 8300000, guid: d3a985e1d000f5149aecf0158796c056, type: 3}
+  upload_dash: {fileID: 8300000, guid: 5777b1a2fd91f0c4e9f32e1460b4e2ac, type: 3}
+  upload_double_jump: {fileID: 8300000, guid: d3a985e1d000f5149aecf0158796c056, type: 3}
+  upload_death: {fileID: 8300000, guid: 7918478af532521479c7fa0c4894d6a3, type: 3}
+--- !u!4 &1842556489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842556487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &479195246547930719
 PrefabInstance:
   m_ObjectHideFlags: 0

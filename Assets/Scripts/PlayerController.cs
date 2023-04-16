@@ -55,12 +55,18 @@ public class PlayerController : MonoBehaviour
     public float icon_dash_value;
     public float jump_fade = 0f;
 
+    public AudioSource my_source;
+    public AudioClip jump_clip;
+    public AudioClip dash_clip;
+    public AudioClip death_clip;
+
     public void Jump(float height)
     {
         my_rigidbody.velocity = new Vector2(my_rigidbody.velocity.x,height);
         // my_rigidbody.AddForce(new Vector2(0.0f,height));
         if (height > 0)
         {
+            Playing(jump_clip);
             my_animator.SetTrigger("Jumped");
         }
     }
@@ -72,6 +78,7 @@ public class PlayerController : MonoBehaviour
     
     public void LoadCheckpoint()
     {
+        Playing(death_clip);
         self.position = respawn_position;
     }
 
@@ -80,6 +87,7 @@ public class PlayerController : MonoBehaviour
         currently_dashing = true;
         my_animator.SetTrigger("Dashed");
         icon_dash_value = max_dashing_cooldown;
+        Playing(dash_clip);
     }
 
     void ConcludeDash()
@@ -100,10 +108,20 @@ public class PlayerController : MonoBehaviour
         dash_icon_back = GameObject.Find("DashIconBack").GetComponent<Image>();
         jump_icon_back = GameObject.Find("JumpIconBack").GetComponent<Image>();
         dashing_cooldown = 0f;
+        jump_clip = Mind.jump_clip;
+        dash_clip = Mind.dash_clip;
+        death_clip = Mind.death_clip;
+        my_source = GetComponent<AudioSource>();
+    }
+
+    void Playing(AudioClip the_clip)
+    {
+        my_source.PlayOneShot(the_clip);
     }
 
     void Update()
     {
+        my_source.volume = Mind.volume;
         if (dashing_unlocked && Mind.player_in_control)
         {
             dash_fraction = 1f - (dashing_cooldown / max_dashing_cooldown);

@@ -52,6 +52,7 @@ MonoBehaviour:
   - 
   - 
   - 
+  - 
   collective_extraction_VHS:
   - 
   - 
@@ -67,6 +68,7 @@ MonoBehaviour:
   - 
   - 
   - 
+  collective_extraction_VOLUME: 
   char_widesplit: 47
   char_smallsplit: 46
   data_VHS_1: 0
@@ -81,3 +83,4 @@ MonoBehaviour:
   data_ENDING_bad: 0
   data_ENDING_safe: 0
   data_ENDING_stolen: 0
+  data_VOLUME_volume: 0

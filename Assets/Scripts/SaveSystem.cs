@@ -91,7 +91,7 @@ public class SaveSystem : MonoBehaviour
 
         // VOLUME
 
-        content += "1";
+        content += "1.0";
 
         // ----- Data Gets Saved ----- //
 
@@ -222,6 +222,7 @@ public class SaveSystem : MonoBehaviour
         // Separating The Data Out
 
         collective_extraction_wide = content.Split(char_widesplit);
+
         collective_extraction_VHS = collective_extraction_wide[0].Split(char_smallsplit);
         collective_extraction_PROGRESS = collective_extraction_wide[1].Split(char_smallsplit);
         collective_extraction_ENDING = collective_extraction_wide[2].Split(char_smallsplit);

@@ -17,7 +17,11 @@ public static class Mind
     // 2 = Mines - OOB
     // 3 = OOB - Applefarm RV
 
-    public static float volume;
+    public static AudioClip jump_clip;
+    public static AudioClip dash_clip;
+    public static AudioClip death_clip;
+
+    public static float volume = 1f;
 
     public static bool has_done_startup;
     public static string actual_save_path;
