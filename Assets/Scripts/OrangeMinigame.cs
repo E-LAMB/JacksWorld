@@ -12,6 +12,8 @@ public class OrangeMinigame : MonoBehaviour
     public GameObject ora;
     public GameObject death_barrier;
 
+    public AudioSource player_source;
+
     public float ora_title;
 
     public void OrangePassed()
@@ -39,6 +41,7 @@ public class OrangeMinigame : MonoBehaviour
             {
                 done_dia = true;
                 ora.SetActive(true);
+                player_source.enabled = false;
             }
             if (done_dia)
             {

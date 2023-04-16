@@ -25,13 +25,14 @@ public class SaveSystem : MonoBehaviour
     public string[] collective_extraction_VHS;
     public string[] collective_extraction_PROGRESS;
     public string[] collective_extraction_ENDING;
+    public string collective_extraction_VOLUME;
 
-    [Header("Extracted Data (Chars)")]
+    [Header("For Extraction - (Chars)")]
     public char char_widesplit;
     public char char_smallsplit;
 
     // Example:
-    // 0.0.0.0.0/5.5/1.1
+    // 0.0.0.0.0/5.5.5/False.False.False.False/0.32
 
     [Header("Extracted Data (Data - VHS)")]
     public int data_VHS_1;
@@ -62,6 +63,10 @@ public class SaveSystem : MonoBehaviour
     // 0 = Not Seen
     // 1 = Seen
 
+    [Header("Extracted Data (Data - VOLUME)")]
+    // Volume 
+    public int data_VOLUME_volume;
+
     // Private Variables
 
     private bool file_preexisted;
@@ -82,7 +87,11 @@ public class SaveSystem : MonoBehaviour
 
         // ENDING
 
-        content += "False.False.False.False";
+        content += "False.False.False.False/";
+
+        // VOLUME
+
+        content += "1";
 
         // ----- Data Gets Saved ----- //
 
@@ -186,7 +195,11 @@ public class SaveSystem : MonoBehaviour
         content += Mind.seen_good_ending.ToString() + ".";
         content += Mind.seen_bad_ending.ToString() + ".";
         content += Mind.seen_safe_ending.ToString() + ".";
-        content += Mind.seen_stolen_ending.ToString();
+        content += Mind.seen_stolen_ending.ToString() + "/";
+
+        // VOLUME
+
+        content += Mind.volume.ToString();
 
         // ----- Data Gets Saved ----- //
 
@@ -212,6 +225,7 @@ public class SaveSystem : MonoBehaviour
         collective_extraction_VHS = collective_extraction_wide[0].Split(char_smallsplit);
         collective_extraction_PROGRESS = collective_extraction_wide[1].Split(char_smallsplit);
         collective_extraction_ENDING = collective_extraction_wide[2].Split(char_smallsplit);
+        collective_extraction_VOLUME = collective_extraction_wide[3];
 
         // Assigning Data to Variables (VHS)
 
@@ -377,6 +391,8 @@ public class SaveSystem : MonoBehaviour
             Mind.seen_stolen_ending = true;
             data_ENDING_stolen = 1;
         }
+
+        Mind.volume = float.Parse(collective_extraction_VOLUME);
 
     }
 

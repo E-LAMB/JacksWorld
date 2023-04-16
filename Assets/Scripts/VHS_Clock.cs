@@ -18,6 +18,7 @@ public class VHS_Clock : MonoBehaviour
     public GameObject TD_object_1;
     public GameObject TD_object_2;
     public GameObject TD_object_3;
+    public GameObject TD_object_4;
 
     public GameObject flash;
     public bool is_flashed;
@@ -39,6 +40,7 @@ public class VHS_Clock : MonoBehaviour
             TD_object_1.SetActive(false);
             TD_object_2.SetActive(false);
             TD_object_3.SetActive(false);
+            TD_object_4.SetActive(false);
             speed_modifier += Time.deltaTime * 30f;
             delay_time = -2f;
             if (Random.Range(1,4) == 1 && x_rotation > 620f)
@@ -65,9 +67,9 @@ public class VHS_Clock : MonoBehaviour
 
         if (0f > delay_time)
         {
-            if (10f > speed_modifier)
+            if (8f > speed_modifier)
             {
-                speed_modifier += Time.deltaTime / 2f;
+                speed_modifier += Time.deltaTime / 3f;
             }
             x_rotation += Time.deltaTime * speed_modifier;
         }

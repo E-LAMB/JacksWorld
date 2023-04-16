@@ -11,6 +11,14 @@ public static class Mind
     public static bool orange_vhs;
     public static bool hub_vhs;
 
+    // public static int current_track;
+    // 0 = None
+    // 1 = Apples - Mines
+    // 2 = Mines - OOB
+    // 3 = OOB - Applefarm RV
+
+    public static float volume;
+
     public static bool has_done_startup;
     public static string actual_save_path;
 

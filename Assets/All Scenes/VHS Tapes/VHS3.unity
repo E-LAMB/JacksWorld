@@ -376,8 +376,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 3
+  m_fontSizeBase: 3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -470,7 +470,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129510310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.75}
+  m_LocalPosition: {x: 0, y: 0, z: -7.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -478,7 +478,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &136868813
@@ -6603,6 +6603,145 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &915516510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4559404333806733024, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: new_audio
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733026, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_Name
+      value: Music_Selector
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4559404333806733027, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79dcf647fd536ee47a22d193cac69787, type: 3}
+--- !u!1 &916518559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 916518561}
+  - component: {fileID: 916518560}
+  m_Layer: 0
+  m_Name: SmokeObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &916518560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916518559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725df66a15e248a4fadb00e8d638253f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  template: {fileID: 3200328787270511624, guid: 4198c92246a311f4ca483965ee1e8427, type: 3}
+  recently_spawned: {fileID: 0}
+  recent_component: {fileID: 0}
+  self: {fileID: 916518561}
+  new_location: {x: 0, y: 0, z: -8}
+  timer: 0
+  quantity: 1
+  quantity_done: 0
+  to_assign: ASSIGNED
+  potential_assigned:
+  - OPEN THE DOOR
+  - LET ME IN
+  - OPEN UP
+  - JACK.
+  - JACK I SWEAR TO GOD
+  - YOU LITTLE SHIT
+  - OPEN THE DOOR NOW
+  - FUCKING CHILD
+  - FUCK
+  - OPEN THE DOOR RIGHT NOW
+  - STOP HOLDING IT SHUT
+  - OPEN. THE. DOOR.
+  - JACK!?
+  - SHIT.
+  - I'M GOING TO BEAT YOU
+  - THIS WILL HURT
+  - DON'T BE SCARED
+  - OPEN IT NOW OR ELSE.
+  - COME OUT
+  - COME OUT COME OUT
+  - COME OUT OF THERE
+  - GET OUT
+  - STEP SHIT
+  - COME OUT COME OUT
+  - YOUR MOM CAN'T PROTECT YOU
+--- !u!4 &916518561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916518559}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -7.741}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &975845327
 GameObject:
   m_ObjectHideFlags: 0
@@ -6833,7 +6972,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 479195245879059522, guid: 3ff6131ea87e70843ba8f89ee72e8e81, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 479195245879059522, guid: 3ff6131ea87e70843ba8f89ee72e8e81, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7017,7 +7156,7 @@ Transform:
   m_Children:
   - {fileID: 1786854224}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1126327133
 MonoBehaviour:
@@ -7036,7 +7175,7 @@ MonoBehaviour:
   dormant_period_min: 20
   dormant_period_max: 38
   period_time: 0
-  clock_stage_threshold: 100
+  clock_stage_threshold: 200
   clock_stage_active: 0
   spawner_is_active: 0
   my_clock: {fileID: 438042539192042319}
@@ -11868,6 +12007,7 @@ MonoBehaviour:
   my_doors: {fileID: 2071865442}
   new_target: {x: -50, y: -1.5, z: -2}
   self: {fileID: 1181698055}
+  movement_speed: 0
   speed: 5
   my_source: {fileID: 1181698057}
   distance: 0
@@ -11877,6 +12017,10 @@ MonoBehaviour:
   doors_are_open: 0
   prompt: {fileID: 129510310}
   jumpscare: {fileID: 611736948}
+  the_clock: {fileID: 438042539192042319}
+  outside_time: 0
+  is_outside_waiting: 0
+  my_smoke: {fileID: 916518559}
 --- !u!82 &1181698057
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17047,7 +17191,7 @@ Transform:
   m_Children:
   - {fileID: 55231232}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1487302096
 MonoBehaviour:
@@ -17066,7 +17210,7 @@ MonoBehaviour:
   dormant_period_min: 26
   dormant_period_max: 32
   period_time: 0
-  clock_stage_threshold: 200
+  clock_stage_threshold: 280
   clock_stage_active: 0
   spawner_is_active: 0
   my_clock: {fileID: 438042539192042319}
@@ -17878,6 +18022,7 @@ MonoBehaviour:
   TD_object_1: {fileID: 1181698052}
   TD_object_2: {fileID: 1126327131}
   TD_object_3: {fileID: 1487302094}
+  TD_object_4: {fileID: 916518559}
   flash: {fileID: 1854157334}
   is_flashed: 0
   exit: {fileID: 1724918654}
