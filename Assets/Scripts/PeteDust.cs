@@ -42,10 +42,10 @@ public class PeteDust : MonoBehaviour
     public GameObject my_smoke;
     public int passes;
 
-    public bool move_direction;
-    public GameObject right_move;
-    public GameObject left_move;
-    public GameObject slam_move;
+    public MeshRenderer left_move;
+    public MeshRenderer slam_move;
+
+    public Transform left_move_trans;
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +54,8 @@ public class PeteDust : MonoBehaviour
         max_thresh = 6f;
         movement_speed = speed;
         passes = 20;
-        slam_move.SetActive(false);
+        slam_move.enabled = false;
+        left_move.enabled = true;
     }
 
     void BeginMovement()
@@ -68,7 +69,6 @@ public class PeteDust : MonoBehaviour
         max_thresh += 0.5f;
         movement_speed = speed;
         is_outside_waiting = false;
-        move_direction = !move_direction;
         outside_time = -1f;
         if (the_clock.x_rotation > 70f && Random.Range(1,11) < passes)
         {
@@ -100,19 +100,17 @@ public class PeteDust : MonoBehaviour
             waiting = true;
         }
 
+        left_move_trans.LookAt(new Vector3(0f,left_move_trans.position.y,-10f));
+
         if (waiting)
         {
             wait_time += Time.deltaTime;
         }
 
-        left_move.SetActive(move_direction);
-        right_move.SetActive(!move_direction);
-
         if (self.position.x > -0.1f && 0.1f > self.position.x && !is_outside_waiting && outside_time > 0f)
         {
-            left_move.SetActive(false);
-            right_move.SetActive(false);
-            slam_move.SetActive(true);
+            left_move.enabled = false;
+            slam_move.enabled = true;
             my_smoke.SetActive(true);
             movement_speed = 0f;
             outside_time -= Time.deltaTime;
@@ -121,7 +119,8 @@ public class PeteDust : MonoBehaviour
                 is_outside_waiting = true;
                 movement_speed = speed;
                 my_smoke.SetActive(false);
-                slam_move.SetActive(false);
+                left_move.enabled = true;
+                slam_move.enabled = false;
             }
         }
 
