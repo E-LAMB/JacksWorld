@@ -422,8 +422,10 @@ public class SaveSystem : MonoBehaviour
             if (!file_preexisted)
             {
                 File.Create(Mind.actual_save_path);
-                SaveSystem_RESET();
-                SaveSystem_RESET();
+                StreamWriter writer = new StreamWriter(Mind.actual_save_path, false);
+                writer.Write("0.0.0.0.0/0.0.0/False.False.False.False/1");
+                writer.Close();
+
                 SaveSystem_LOAD();
             } else
             {
