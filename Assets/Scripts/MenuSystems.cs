@@ -69,7 +69,7 @@ public class MenuSystems : MonoBehaviour
     public void Butt_SceneLevelSelect()
     {
         Mind.played_select = true;
-        if (save_system.data_PROGRESS_current == 0) 
+        if (save_system.data_PROGRESS_max < 1) 
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);
         } else

@@ -21,11 +21,7 @@ public class DontDestroyOnLoadMusic : MonoBehaviour
             // 2 = Mines - OOB
             // 3 = OOB - Applefarm RV
 
-            if (new_track == 1) {my_source.clip = tracks[new_track];}
-            if (new_track == 2) {my_source.clip = tracks[new_track];}
-            if (new_track == 3) {my_source.clip = tracks[new_track];}
-            if (new_track == 4) {my_source.clip = tracks[new_track];}
-            if (new_track == 5) {my_source.clip = tracks[new_track];} 
+            if (new_track > 0) {my_source.clip = tracks[new_track];}
  
             my_source.Play();
                      

@@ -14157,6 +14157,75 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1399484250}
     m_Modifications:
+    - target: {fileID: 117551748547634969, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 764455241364909530, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 764455241364909530, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 764455241364909530, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -335
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_text
+      value: 'WASD / ARROWs to MOVE
+
+        SPACEBAR to JUMP
+
+        HOLD ESCAPE
+        to EXIT'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_fontSize
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040236007726769307, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7495542463464979610, guid: 9451dd6e2d1d4b041abf19ab5b037a4c, type: 3}
       propertyPath: m_Name
       value: DashParent (1)

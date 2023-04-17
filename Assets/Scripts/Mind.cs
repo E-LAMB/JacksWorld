@@ -23,6 +23,8 @@ public static class Mind
     public static AudioClip select_clip;
     public static bool played_select;
 
+    public static bool made_sound;
+
     public static float volume = 1f;
 
     public static bool has_done_startup;

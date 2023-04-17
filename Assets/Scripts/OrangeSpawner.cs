@@ -23,6 +23,8 @@ public class OrangeSpawner : MonoBehaviour
     public bool next_is_good;
     public bool rolled;
 
+    public int good_chance = 2;
+
     public float warning = 2f;
     
 
@@ -48,13 +50,15 @@ public class OrangeSpawner : MonoBehaviour
         if (timer > time_delay - warning && !rolled)
         {
             rolled = true;
-            if (Random.Range(1,4) != 1)
+            if (Random.Range(1,5) <= good_chance)
             {
                 next_is_good = true;
+                good_chance -= 1;
                 orange_next.SetActive(true);
             } else
             {
                 next_is_good = false;
+                good_chance += 1;
                 bad_next.SetActive(true);
             }
             blank_screen.SetActive(false);

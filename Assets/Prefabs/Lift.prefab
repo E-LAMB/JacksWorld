@@ -361,6 +361,7 @@ MonoBehaviour:
   my_prompt: {fileID: 1043348049405742944}
   warp: {fileID: 0}
   player: {fileID: 0}
+  my_button: {fileID: 5545802976658924417}
 --- !u!1 &5545802976818567073
 GameObject:
   m_ObjectHideFlags: 0

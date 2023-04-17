@@ -31,12 +31,12 @@ public class JumpscareCam : MonoBehaviour
         new_angle = turning.Evaluate(timer);
         self.localRotation = Quaternion.Euler(new_angle,0f,0f);
 
-        if (timer > 3f)
+        if (timer > 8f)
         {
             screen_text.SetActive(true);
         }
 
-        if (timer > 7f)
+        if (timer > 13f)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(new_scene);
         }

@@ -16,6 +16,8 @@ public class Button_Lift : MonoBehaviour
     public Transform warp;
     public Transform player;
 
+    public SpriteRenderer my_button;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,14 @@ public class Button_Lift : MonoBehaviour
     void Update()
     {
         player_is_close = Physics2D.OverlapCircle(transform.position, 2f, player_layer);
+
+        if (is_activated)
+        {
+            my_button.color = new Vector4(1f,1f,1f,1f);
+        } else
+        {
+            my_button.color = new Vector4(0.7f,0.7f,0.7f,1f);
+        }
 
         if (player_is_close && is_activated)
         {

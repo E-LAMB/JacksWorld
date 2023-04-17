@@ -28,6 +28,8 @@ public class BombNPC : MonoBehaviour
 
     public BombCounter my_counter;
 
+    public int my_id;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +62,12 @@ public class BombNPC : MonoBehaviour
             dia_state = 2;
             Mind.player_in_control = false;
             subtitle_system.ShowDialouge(my_text,my_name);
+
+            if (my_id == 1) {my_counter.icon_bomb_1 = true;}
+            if (my_id == 2) {my_counter.icon_bomb_2 = true;}
+            if (my_id == 3) {my_counter.icon_bomb_3 = true;}
+            if (my_id == 4) {my_counter.icon_bomb_4 = true;}
+
         }
 
         if (dia_state == 2 && player_is_close && Input.GetKeyUp(KeyCode.E))

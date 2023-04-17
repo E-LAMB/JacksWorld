@@ -423,6 +423,7 @@ public class SaveSystem : MonoBehaviour
             {
                 File.Create(Mind.actual_save_path);
                 SaveSystem_RESET();
+                SaveSystem_RESET();
                 SaveSystem_LOAD();
             } else
             {
