@@ -11,7 +11,8 @@ public class MasterDoorController : MonoBehaviour
     public MeshRenderer door_b;
 
     public Material trans_door;
-    public Material opq_door;
+
+    public float the_fade;
 
     // Start is called before the first frame update
     void Start()
@@ -26,12 +27,21 @@ public class MasterDoorController : MonoBehaviour
 
         if (doors_open)
         {
-            door_a.material = opq_door;
-            door_b.material = opq_door;
+            if (the_fade < 1f)
+            {
+                the_fade += Time.deltaTime / 10f;
+            }
         } else
         {
-            door_a.material = trans_door;
-            door_b.material = trans_door;
+            if (the_fade > 0.8f)
+            {
+                the_fade -= Time.deltaTime / 20f;
+            }
         }
+
+        trans_door.color = new Vector4 (1f, 1f, 1f, the_fade);
+
+        door_a.material = trans_door;
+        door_b.material = trans_door;
     }
 }
