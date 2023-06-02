@@ -52,7 +52,7 @@ public class BombCounter : MonoBehaviour
         if (talked_to_little_girl)
         {
             Vector3 new_position = big_door.position;
-            new_position.y += Time.deltaTime * 0.4f;
+            new_position.y += Time.deltaTime * 0.55f;
             big_door.position = new_position;
         }
 
