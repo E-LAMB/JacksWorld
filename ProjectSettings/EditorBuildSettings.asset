@@ -116,4 +116,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/All Scenes/Menus/Credits.unity
     guid: b43c68497e46649448430e1879fd9569
+  - enabled: 1
+    path: Assets/All Scenes/Menus/IntroCutscene.unity
+    guid: 7b7750aec9a68d842ae2b472329611a3
   m_configObjects: {}
