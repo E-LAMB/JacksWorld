@@ -25,6 +25,14 @@ public class VHS_Clock : MonoBehaviour
 
     public VHS_Exit exit;
 
+    /*
+    public Renderer my_renderer;
+    public Material active_face;
+    public Material inactive_face;
+
+    public Light clock_light;
+    */
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,12 +75,22 @@ public class VHS_Clock : MonoBehaviour
 
         if (0f > delay_time)
         {
-            if (8f > speed_modifier)
+            if (1f > speed_modifier)
             {
-                speed_modifier += Time.deltaTime / 3f;
+                speed_modifier += Time.deltaTime / 14f;
             }
-            x_rotation += Time.deltaTime * speed_modifier;
+            x_rotation += Time.deltaTime * speed_modifier * 8f;
         }
+
+        /*
+        if (my_controller.doors_open)
+        {
+            my_renderer.material = active_face;
+        } else
+        {
+            my_renderer.material = inactive_face;
+        }
+        */
 
         myself.localRotation = Quaternion.Euler(x_rotation,0f,90f);
     }

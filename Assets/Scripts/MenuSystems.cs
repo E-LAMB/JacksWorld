@@ -50,6 +50,7 @@ public class MenuSystems : MonoBehaviour
         // 12 = Hub5
         // 13 = Home
 
+        if (save_system.data_PROGRESS_current == 0) {UnityEngine.SceneManagement.SceneManager.LoadScene(37);}
         if (save_system.data_PROGRESS_current == 1) {UnityEngine.SceneManagement.SceneManager.LoadScene(2);}
         if (save_system.data_PROGRESS_current == 2) {UnityEngine.SceneManagement.SceneManager.LoadScene(3);}
         if (save_system.data_PROGRESS_current == 3) {UnityEngine.SceneManagement.SceneManager.LoadScene(4);}
@@ -71,7 +72,7 @@ public class MenuSystems : MonoBehaviour
         Mind.played_select = true;
         if (save_system.data_PROGRESS_max < 1) 
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(37);
         } else
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(28);

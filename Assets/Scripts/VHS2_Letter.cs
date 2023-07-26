@@ -6,13 +6,16 @@ public class VHS2_Letter : MonoBehaviour
 {
 
     public Transform self;
-    public Transform target;
+
+    public string my_type;
+    public GameObject target;
 
     public GameObject self_ob;
     public GameObject target_ob;
 
-    public SpriteRenderer target_renderer;
     public SpriteRenderer self_renderer;
+
+    public CircleCollider2D my_collider;
 
     public float distance;
     public float snap_distance;
@@ -39,8 +42,8 @@ public class VHS2_Letter : MonoBehaviour
 
         self.position = new Vector3 (Random.Range(left_bound,right_bound),Random.Range(up_bound,down_bound),0f);
 
-        target_renderer = target_ob.GetComponent<SpriteRenderer>();
         self_renderer = self_ob.GetComponent<SpriteRenderer>();
+        my_collider = self_ob.GetComponent<CircleCollider2D>();
         /*
         self_ob = gameObject;
         self = self_ob.GetComponent<Transform>();
@@ -49,20 +52,23 @@ public class VHS2_Letter : MonoBehaviour
         */
     }
 
+    public void FoundTarget(GameObject the_target)
+    {
+        in_space = true;
+        my_counter.letters_placed += 1;
+        target = the_target;
+        my_counter.AddMore();
+    }
+
     // Update is called once per frame
     void Update()
     {
         self_renderer.color = new_color;
-        distance = Vector3.Distance(self.position, target.position);
-        target_renderer.enabled = !in_space;
-        if (snap_distance > distance && !in_space)
-        {
-            in_space = true;
-            my_counter.letters_placed += 1;
-        }
+
         if (in_space) 
         {
-            self.position = target.position;
+            my_collider.enabled = false;
+            self.position = target.transform.position;
 
             if (my_counter.puzzle_completed)
             {

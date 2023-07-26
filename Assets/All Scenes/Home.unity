@@ -28018,8 +28018,8 @@ MonoBehaviour:
   my_prompt: {fileID: 537774161}
   my_name: JACK
   subtitle_system: {fileID: 1519905031}
-  my_text: This is the backdoor, Dad used to smoke out here. His friends called him
-    "Smoky Pete"
+  my_text: This is the backdoor, Dad used to smoke out here. His friends used to
+    call him "Smoky Pete"
   show_prompt: 0
   special_range: door
 --- !u!4 &1397849022

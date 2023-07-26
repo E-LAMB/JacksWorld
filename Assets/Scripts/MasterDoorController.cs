@@ -33,7 +33,7 @@ public class MasterDoorController : MonoBehaviour
             }
         } else
         {
-            if (the_fade > 0.8f)
+            if (the_fade > 0.9f)
             {
                 the_fade -= Time.deltaTime / 20f;
             }

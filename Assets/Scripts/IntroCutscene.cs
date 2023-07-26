@@ -23,31 +23,36 @@ public class IntroCutscene : MonoBehaviour
         objects[2].SetActive(false);
         objects[3].SetActive(false);
         objects[4].SetActive(false);
+        objects[5].SetActive(false);
 
         my_time += Time.deltaTime;
 
-        if (0f < my_time && my_time < 4f)
+        if (0f < my_time && my_time < 3f)
         {
             objects[0].SetActive(true);
         }
-        if (4f < my_time && my_time < 8f)
+        if (3f < my_time && my_time < 6f)
         {
             objects[1].SetActive(true);
         }
-        if (8f < my_time && my_time < 12f)
+        if (6f < my_time && my_time < 9f)
         {
             objects[2].SetActive(true);
         }
-        if (12f < my_time && my_time < 14f)
+        if (9f < my_time && my_time < 12f)
         {
             objects[3].SetActive(true);
         }
-        if (14f < my_time && my_time < 16f)
+        if (12f < my_time && my_time < 15f)
         {
             objects[4].SetActive(true);
         }
+        if (15f < my_time && my_time < 17f)
+        {
+            objects[5].SetActive(true);
+        }
 
-        if (my_time > 16f)
+        if (my_time > 17.5f)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(scene_to_warp);
         }

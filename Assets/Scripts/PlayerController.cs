@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
         jump_clip = Mind.jump_clip;
         dash_clip = Mind.dash_clip;
         death_clip = Mind.death_clip;
-        my_source = GetComponent<AudioSource>();
+        my_source = gameObject.GetComponent<AudioSource>();
     }
 
     void Playing(AudioClip the_clip)
