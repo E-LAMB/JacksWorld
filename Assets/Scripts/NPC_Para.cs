@@ -38,6 +38,10 @@ public class NPC_Para : MonoBehaviour
     float d_range = 2f;
     public float exit_time;
 
+    public GameObject blackness;
+    
+    public bool show_blackness;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -91,11 +95,33 @@ public class NPC_Para : MonoBehaviour
 
         if (dia_state == 5 && Input.GetKeyDown(KeyCode.E))
         {
-            jack_possessed.SetActive(true);
             dia_state = 6;
+            blackness.SetActive(true);
         }
 
         if (dia_state == 6)
+        {
+            exit_time += Time.deltaTime;
+        }
+
+        if (dia_state == 6 && exit_time > 1f)
+        {
+            jack_possessed.SetActive(true);
+            blackness.SetActive(false);
+            dia_state = 7;
+            exit_time = 0f;
+        }
+
+        if (dia_state == 7)
+        {
+            if (Random.Range(0,3) == 1)
+            {
+                show_blackness = !show_blackness;
+                blackness.SetActive(show_blackness);
+            }
+        }
+
+        if (dia_state == 7)
         {
             exit_time += Time.deltaTime;
             if (exit_time > 4f)

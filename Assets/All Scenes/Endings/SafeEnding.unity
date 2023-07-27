@@ -779,7 +779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   threshold: 10
-  new_scene: 1
+  new_scene: 36
 --- !u!4 &714804727
 Transform:
   m_ObjectHideFlags: 0
