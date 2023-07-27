@@ -25790,7 +25790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a735ae7ad5d7b45b93e170b39cc452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sys: {fileID: 0}
+  sys: {fileID: 1700843217}
   has_gotten_an_ending: 0
   timer: 0
 --- !u!114 &723948580
@@ -25812,7 +25812,7 @@ MonoBehaviour:
   player_is_close: 0
   my_prompt: {fileID: 798214078}
   my_name: NOTE
-  subtitle_system: {fileID: 0}
+  subtitle_system: {fileID: 1168197765}
   my_text: 'The note reads as follows:
 
     "If you need a rest, Come and find me."'
@@ -55742,7 +55742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a735ae7ad5d7b45b93e170b39cc452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sys: {fileID: 0}
+  sys: {fileID: 1700843217}
   has_gotten_an_ending: 0
   timer: 0
 --- !u!114 &1465404268
@@ -55764,7 +55764,7 @@ MonoBehaviour:
   player_is_close: 0
   my_prompt: {fileID: 1903681621}
   my_name: NOTE
-  subtitle_system: {fileID: 0}
+  subtitle_system: {fileID: 1168197765}
   my_text: 'The note reads as follows:
 
     "You''re almost there Jack - I''m waiting
