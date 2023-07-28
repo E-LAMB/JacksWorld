@@ -6162,7 +6162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517740848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1584572734}
@@ -8993,6 +8993,7 @@ MonoBehaviour:
   collective_extraction_ENDING:
   - 
   - 
+  collective_extraction_VOLUME: 
   char_widesplit: 47
   char_smallsplit: 46
   data_VHS_1: 0
@@ -9007,6 +9008,7 @@ MonoBehaviour:
   data_ENDING_bad: 0
   data_ENDING_safe: 0
   data_ENDING_stolen: 0
+  data_VOLUME_volume: 0
 --- !u!4 &2051337518
 Transform:
   m_ObjectHideFlags: 0

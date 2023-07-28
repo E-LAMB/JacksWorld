@@ -10,6 +10,8 @@ public class FadeIn : MonoBehaviour
     public RawImage my_image;
     public float time;
 
+    public float modifier = 1f;
+
     void Start()
     {
         time = 1f;
@@ -19,7 +21,7 @@ public class FadeIn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time -= Time.deltaTime;
+        time -= Time.deltaTime * modifier;
         my_image.color = new Vector4(my_image.color.r, my_image.color.g, my_image.color.b, time);
         if (-0.1f > time)
         {
